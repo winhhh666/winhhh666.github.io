@@ -8,7 +8,7 @@
       <link href="/2023/08/14/er-fen-fa-ji-chang-shu-chu-li-xiao-ji-qiao/"/>
       <url>/2023/08/14/er-fen-fa-ji-chang-shu-chu-li-xiao-ji-qiao/</url>
       
-        <content type="html"><![CDATA[<h1 id="常数处理技巧-位运算"><a href="#常数处理技巧-位运算" class="headerlink" title="常数处理技巧(位运算)"></a>常数处理技巧(位运算)</h1><h5 id="R-L-2如果遇到19亿-20亿这样的数-会溢出"><a href="#R-L-2如果遇到19亿-20亿这样的数-会溢出" class="headerlink" title="(R+L)/2如果遇到19亿,20亿这样的数,会溢出"></a>(R+L)/2如果遇到19亿,20亿这样的数,会溢出</h5><p>所以用<strong>L+(R-L)/2</strong> 来防止溢出</p><p>而**(R-L)/2<strong>可以写为</strong>(R-L)&gt;&gt;1** </p>]]></content>
+        <content type="html"><![CDATA[<h1 id="常数处理技巧-位运算"><a href="#常数处理技巧-位运算" class="headerlink" title="常数处理技巧(位运算)"></a>常数处理技巧(位运算)</h1><h5 id="R-L-2如果遇到19亿-20亿这样的数-会溢出"><a href="#R-L-2如果遇到19亿-20亿这样的数-会溢出" class="headerlink" title="(R+L)/2如果遇到19亿,20亿这样的数,会溢出"></a>(R+L)/2如果遇到19亿,20亿这样的数,会溢出</h5><p>所以用<strong>L+(R-L)/2</strong> 来防止溢出</p><p>而**(R-L)/2<strong>可以写为</strong>(R-L)&gt;&gt;1** </p><img src="C:\Users\10482\MyBlog\source\_posts\photo\壁纸.jpg" alt="壁纸" style="zoom:50%;">]]></content>
       
       
       <categories>
@@ -20,7 +20,9 @@
       
         <tags>
             
-            <tag> 二分法 位运算处理(规避边界溢出) </tag>
+            <tag> 二分法 </tag>
+            
+            <tag> 位运算处理(规避边界溢出) </tag>
             
         </tags>
       
