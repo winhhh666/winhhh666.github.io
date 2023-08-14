@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>二分法及常数处理小技巧</title>
+      <link href="/2023/08/14/er-fen-fa-ji-chang-shu-chu-li-xiao-ji-qiao/"/>
+      <url>/2023/08/14/er-fen-fa-ji-chang-shu-chu-li-xiao-ji-qiao/</url>
+      
+        <content type="html"><![CDATA[<h1 id="常数处理技巧-位运算"><a href="#常数处理技巧-位运算" class="headerlink" title="常数处理技巧(位运算)"></a>常数处理技巧(位运算)</h1><h5 id="R-L-2如果遇到19亿-20亿这样的数-会溢出"><a href="#R-L-2如果遇到19亿-20亿这样的数-会溢出" class="headerlink" title="(R+L)/2如果遇到19亿,20亿这样的数,会溢出"></a>(R+L)/2如果遇到19亿,20亿这样的数,会溢出</h5><p>所以用<strong>L+(R-L)/2</strong> 来防止溢出</p><p>而**(R-L)/2<strong>可以写为</strong>(R-L)&gt;&gt;1** </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 初学者 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 二分法 位运算处理(规避边界溢出) </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对数器</title>
+      <link href="/2023/08/14/dui-shu-qi/"/>
+      <url>/2023/08/14/dui-shu-qi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="生成随机数组"><a href="#生成随机数组" class="headerlink" title="生成随机数组"></a>生成随机数组</h1><h3 id="生成随机长度和随机值两个步骤"><a href="#生成随机长度和随机值两个步骤" class="headerlink" title="生成随机长度和随机值两个步骤"></a>生成随机长度和随机值两个步骤</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">generateRandomArr</span><span class="token punctuation">(</span><span class="token keyword">int</span> maxSize <span class="token punctuation">,</span> <span class="token keyword">int</span> maxValue<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>maxSize<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span> <span class="token punctuation">;</span> i<span class="token operator">&lt;</span>arr<span class="token punctuation">.</span>length <span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>        arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">(</span>maxValue<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">(</span>maxValue<span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="随机数种子-Math-random"><a href="#随机数种子-Math-random" class="headerlink" title="随机数种子: Math.random()"></a>随机数种子: Math.random()</h5>]]></content>
+      
+      
+      <categories>
+          
+          <category> 初学者 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 对数器 检验 随机数组 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>从这个链接里面的博客学来的,保存一下链接防止以后找不着</title>
       <link href="/2023/08/13/cong-zhe-ge-lian-jie-li-mian-de-bo-ke-xue-lai-de-bao-cun-yi-xia-lian-jie-fang-zhi-yi-hou-zhao-bu-zhao/"/>
       <url>/2023/08/13/cong-zhe-ge-lian-jie-li-mian-de-bo-ke-xue-lai-de-bao-cun-yi-xia-lian-jie-fang-zhi-yi-hou-zhao-bu-zhao/</url>
