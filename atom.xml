@@ -6,7 +6,7 @@
   <link href="https://winhhh666.github.io/atom.xml" rel="self"/>
   
   <link href="https://winhhh666.github.io/"/>
-  <updated>2023-08-14T14:03:43.403Z</updated>
+  <updated>2023-08-15T01:58:46.051Z</updated>
   <id>https://winhhh666.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>异或运算</title>
+    <link href="https://winhhh666.github.io/2023/08/15/yi-huo-yun-suan/"/>
+    <id>https://winhhh666.github.io/2023/08/15/yi-huo-yun-suan/</id>
+    <published>2023-08-15T01:58:46.000Z</published>
+    <updated>2023-08-15T01:58:46.051Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>java语言自带排序</title>
+    <link href="https://winhhh666.github.io/2023/08/15/java-yu-yan-zi-dai-pai-xu/"/>
+    <id>https://winhhh666.github.io/2023/08/15/java-yu-yan-zi-dai-pai-xu/</id>
+    <published>2023-08-14T23:35:40.000Z</published>
+    <updated>2023-08-15T01:40:11.947Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Arrays.sort(int[] a)&lt;br&gt;这种形式是对一个数组的所有元素进行排序，并且是按从小到大的顺序。&lt;/p&gt;
+&lt;p&gt;举例如下：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-java&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>二分查找及对数器的使用</title>
