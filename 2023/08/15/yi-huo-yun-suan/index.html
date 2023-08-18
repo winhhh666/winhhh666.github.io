@@ -5,7 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="异或运算, SatanPig的个人博客">
-    <meta name="description" content="">
+    <meta name="description" content="0^N = N
+N ^ N = 0
+交换律
+结合律
+
+用异或的方式交换两个数a[i] = a[i] * a[j];
+a[j] = a[i] ^ a[j];
+a[i] = a[i] ^ a[j];
+一组数,其余数有偶数次,只有一个数是有奇数次">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -471,12 +479,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97-%E5%BC%82%E6%88%96/">
+                                <span class="chip bg-color">位运算 异或</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%88%9D%E5%AD%A6%E8%80%85/" class="post-category">
+                                初学者
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -492,14 +513,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-08-15
+                    2023-08-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    323
                 </div>
                 
 
@@ -529,7 +550,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <pre class="line-numbers language-none"><code class="language-none">0^N = N
+N ^ N = 0
+交换律
+结合律<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="用异或的方式交换两个数"><a href="#用异或的方式交换两个数" class="headerlink" title="用异或的方式交换两个数"></a>用异或的方式交换两个数</h1><p>a[i] = a[i] * a[j];</p>
+<p>a[j] = a[i] ^ a[j];</p>
+<p>a[i] = a[i] ^ a[j];</p>
+<h1 id="一组数-其余数有偶数次-只有一个数是有奇数次-的-求出这个数"><a href="#一组数-其余数有偶数次-只有一个数是有奇数次-的-求出这个数" class="headerlink" title="一组数,其余数有偶数次,只有一个数是有奇数次 的,求出这个数"></a>一组数,其余数有偶数次,只有一个数是有奇数次 的,求出这个数</h1><p>异或运算循环</p>
+<h1 id="怎么把一个int类型的数提取出最右侧的1来"><a href="#怎么把一个int类型的数提取出最右侧的1来" class="headerlink" title="怎么把一个int类型的数提取出最右侧的1来"></a>怎么把一个int类型的数提取出最右侧的1来</h1><p>a&amp;((~a)+1)即a&amp;(-a)</p>
+<h1 id="一个数组中有两种数出现了奇数次-其他数出现了偶数次-求出这两种数"><a href="#一个数组中有两种数出现了奇数次-其他数出现了偶数次-求出这两种数" class="headerlink" title="一个数组中有两种数出现了奇数次,其他数出现了偶数次,求出这两种数"></a>一个数组中有两种数出现了奇数次,其他数出现了偶数次,求出这两种数</h1><p>先循环,全部异或一遍,求出最后的数相当于奇数次 的两个数异或运算</p>
+<p>之后得出一个数eor,求这个数eor二进制位上最右边为1的数a(见上问题)</p>
+<p> 用一个数在数组中遍历,如果这个数与a与运算不为0,把数组的这个数与eor’进行异或运算</p>
+<p>一遍遍历之后我们就得到了其中一个奇数</p>
+<p>把这个奇数与eor进行位运算就得到了另一个奇数,很巧妙</p>
+<h1 id="一个数组中有一种数出现k次-其他数都出现了M次-M-1-K"><a href="#一个数组中有一种数出现k次-其他数都出现了M次-M-1-K" class="headerlink" title="一个数组中有一种数出现k次,其他数都出现了M次,M>1,K<M,找到,出现了k次的数,要求:额外空间复杂度O(1),时间复杂度O(N)"></a>一个数组中有一种数出现k次,其他数都出现了M次,M&gt;1,K&lt;M,找到,出现了k次的数,要求:额外空间复杂度O(1),时间复杂度O(N)</h1><p>代码实现?</p>
+
                 
             </div>
             <hr/>
@@ -592,7 +629,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97-%E5%BC%82%E6%88%96/">
+                                    <span class="chip bg-color">位运算 异或</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -696,18 +737,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/08/15/yi-huo-yun-suan/">
+                <a href="/2023/08/18/gou-zao-fang-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="异或运算">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="构造方法">
                         
-                        <span class="card-title">异或运算</span>
+                        <span class="card-title">构造方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -717,18 +757,33 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-15
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-18
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Satan Pig
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%88%9D%E5%AD%A6%E8%80%85/" class="post-category">
+                                    初学者
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/">
+                        <span class="chip bg-color">构造方法</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -999,7 +1054,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">2.4k</span>
+                        class="white-color">2.9k</span>
             
             
             
