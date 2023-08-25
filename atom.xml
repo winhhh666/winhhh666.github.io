@@ -6,7 +6,7 @@
   <link href="https://winhhh666.github.io/atom.xml" rel="self"/>
   
   <link href="https://winhhh666.github.io/"/>
-  <updated>2023-08-18T06:40:00.732Z</updated>
+  <updated>2023-08-25T04:14:43.218Z</updated>
   <id>https://winhhh666.github.io/</id>
   
   <author>
@@ -15,6 +15,192 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java文字小游戏</title>
+    <link href="https://winhhh666.github.io/2023/08/25/java-wen-zi-xiao-you-xi/"/>
+    <id>https://winhhh666.github.io/2023/08/25/java-wen-zi-xiao-you-xi/</id>
+    <published>2023-08-25T04:03:56.000Z</published>
+    <updated>2023-08-25T04:14:43.218Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; &lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="初学者" scheme="https://winhhh666.github.io/categories/%E5%88%9D%E5%AD%A6%E8%80%85/"/>
+    
+    
+    <category term="java" scheme="https://winhhh666.github.io/tags/java/"/>
+    
+    <category term="文字游戏" scheme="https://winhhh666.github.io/tags/%E6%96%87%E5%AD%97%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://winhhh666.github.io/2023/08/25/ce-shi/"/>
+    <id>https://winhhh666.github.io/2023/08/25/ce-shi/</id>
+    <published>2023-08-25T03:58:31.000Z</published>
+    <updated>2023-08-25T03:58:31.352Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>0823日记</title>
+    <link href="https://winhhh666.github.io/2023/08/23/0823-ri-ji/"/>
+    <id>https://winhhh666.github.io/2023/08/23/0823-ri-ji/</id>
+    <published>2023-08-23T15:58:03.000Z</published>
+    <updated>2023-08-23T16:13:18.616Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="心得" scheme="https://winhhh666.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机科学导论</title>
+    <link href="https://winhhh666.github.io/2023/08/21/ji-suan-ji-ke-xue-dao-lun/"/>
+    <id>https://winhhh666.github.io/2023/08/21/ji-suan-ji-ke-xue-dao-lun/</id>
+    <published>2023-08-21T12:58:24.000Z</published>
+    <updated>2023-08-21T14:27:34.794Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;  锁存器&lt;/p&gt;
+&lt;p&gt;![](C:&#92;Users&#92;10482&#92;Pictures&#92;Screenshots&#92;屏幕截图 2023-08-21</summary>
+        
+      
+    
+    
+    
+    <category term="英文课" scheme="https://winhhh666.github.io/categories/%E8%8B%B1%E6%96%87%E8%AF%BE/"/>
+    
+    <category term="计算机科学" scheme="https://winhhh666.github.io/categories/%E8%8B%B1%E6%96%87%E8%AF%BE/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    
+    <category term="计算机科学" scheme="https://winhhh666.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="计算机存储设计" scheme="https://winhhh666.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%98%E5%82%A8%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>局部变量和成员变量区别</title>
+    <link href="https://winhhh666.github.io/2023/08/19/ju-bu-bian-liang-he-cheng-yuan-bian-liang-qu-bie/"/>
+    <id>https://winhhh666.github.io/2023/08/19/ju-bu-bian-liang-he-cheng-yuan-bian-liang-qu-bie/</id>
+    <published>2023-08-19T14:48:25.000Z</published>
+    <updated>2023-08-20T01:43:56.403Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​	&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;区别&lt;/th&gt;
+&lt;th&gt;成员变量&lt;/th&gt;
+&lt;th&gt;局部变量&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;类中位置不同&lt;/td&gt;
+&lt;td&gt;类中,方法外&lt;/td&gt;
+&lt;td&gt;方法内,方法</summary>
+        
+      
+    
+    
+    
+    
+    <category term="局部变量" scheme="https://winhhh666.github.io/tags/%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F/"/>
+    
+    <category term="成员变量" scheme="https://winhhh666.github.io/tags/%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javane</title>
+    <link href="https://winhhh666.github.io/2023/08/18/java-nei-cun-fen-pei/"/>
+    <id>https://winhhh666.github.io/2023/08/18/java-nei-cun-fen-pei/</id>
+    <published>2023-08-18T07:45:48.000Z</published>
+    <updated>2023-08-19T14:48:00.209Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; java内存分配介绍&lt;/p&gt;
+&lt;p&gt;栈:类似子弹夹,先进后出(方法,变量等)&lt;/p&gt;
+&lt;p&gt;方法运行时使用的内存,如main方法运行,进入方法栈中执行&lt;/p&gt;
+&lt;p&gt;堆:存储对象或组,new来创建的,都存储在堆内存&lt;/p&gt;
+&lt;p&gt;方法区:</summary>
+        
+      
+    
+    
+    
+    <category term="初学者" scheme="https://winhhh666.github.io/categories/%E5%88%9D%E5%AD%A6%E8%80%85/"/>
+    
+    
+    <category term="jvm" scheme="https://winhhh666.github.io/tags/jvm/"/>
+    
+    <category term="对象" scheme="https://winhhh666.github.io/tags/%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>标准javabean类</title>
+    <link href="https://winhhh666.github.io/2023/08/18/biao-zhun-javabean-lei/"/>
+    <id>https://winhhh666.github.io/2023/08/18/biao-zhun-javabean-lei/</id>
+    <published>2023-08-18T07:40:26.000Z</published>
+    <updated>2023-08-18T07:44:20.024Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;标准javabean&quot;&gt;&lt;a href=&quot;#标准javabean&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="初学者" scheme="https://winhhh666.github.io/categories/%E5%88%9D%E5%AD%A6%E8%80%85/"/>
+    
+    
+    <category term="JavaBean" scheme="https://winhhh666.github.io/tags/JavaBean/"/>
+    
+  </entry>
   
   <entry>
     <title>构造方法</title>
