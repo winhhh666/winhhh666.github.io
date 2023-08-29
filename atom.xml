@@ -6,7 +6,7 @@
   <link href="https://winhhh666.github.io/atom.xml" rel="self"/>
   
   <link href="https://winhhh666.github.io/"/>
-  <updated>2023-08-25T04:14:43.218Z</updated>
+  <updated>2023-08-29T03:45:46.477Z</updated>
   <id>https://winhhh666.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VM17pro安装及激活</title>
+    <link href="https://winhhh666.github.io/2023/08/29/vm17pro-an-zhuang-ji-ji-huo/"/>
+    <id>https://winhhh666.github.io/2023/08/29/vm17pro-an-zhuang-ji-ji-huo/</id>
+    <published>2023-08-29T03:43:18.000Z</published>
+    <updated>2023-08-29T03:45:46.477Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; 这个是安装的:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/616883406&quot;&gt;VMware Workstation Pro 17虚拟机软件详细安装教程 - 知乎 (zhihu.com)&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="软件环境安装" scheme="https://winhhh666.github.io/categories/%E8%BD%AF%E4%BB%B6%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/"/>
+    
+    
+    <category term="VMware" scheme="https://winhhh666.github.io/tags/VMware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>键盘录入</title>
+    <link href="https://winhhh666.github.io/2023/08/26/jian-pan-lu-ru/"/>
+    <id>https://winhhh666.github.io/2023/08/26/jian-pan-lu-ru/</id>
+    <published>2023-08-26T08:00:03.000Z</published>
+    <updated>2023-08-26T08:09:57.551Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; 第一套体系:&lt;/p&gt;
+&lt;p&gt;​	import java.util.scanner&lt;/p&gt;
+&lt;p&gt;​	Scanner sc = new Scanner(System.in);&lt;/p&gt;
+&lt;p&gt;nextInt();接收整数&lt;/p&gt;
+&lt;p&gt;nextDouble();</summary>
+        
+      
+    
+    
+    
+    <category term="初学者" scheme="https://winhhh666.github.io/categories/%E5%88%9D%E5%AD%A6%E8%80%85/"/>
+    
+    
+    <category term="java" scheme="https://winhhh666.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>java文字小游戏</title>
@@ -469,27 +524,6 @@ N ^ N = 0
         
         
     <summary type="html">&lt;p&gt;1.2.1 网站&lt;br&gt;参数描述title网站标题subtitle网站副标题description网站描述author您的名字language网站使用的语言timezone网站时区。Hexo 默认使用您电脑的时区。时区列表。比如说：America/New_York,</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://winhhh666.github.io/2023/08/13/hello-world/"/>
-    <id>https://winhhh666.github.io/2023/08/13/hello-world/</id>
-    <published>2023-08-13T04:31:07.742Z</published>
-    <updated>2023-08-13T04:31:07.742Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
         
       
     
