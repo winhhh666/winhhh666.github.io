@@ -6,7 +6,7 @@
   <link href="https://winhhh666.github.io/atom.xml" rel="self"/>
   
   <link href="https://winhhh666.github.io/"/>
-  <updated>2023-08-29T03:45:46.477Z</updated>
+  <updated>2023-08-30T04:08:07.854Z</updated>
   <id>https://winhhh666.github.io/</id>
   
   <author>
@@ -17,19 +17,80 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>VM17pro安装及激活</title>
-    <link href="https://winhhh666.github.io/2023/08/29/vm17pro-an-zhuang-ji-ji-huo/"/>
-    <id>https://winhhh666.github.io/2023/08/29/vm17pro-an-zhuang-ji-ji-huo/</id>
-    <published>2023-08-29T03:43:18.000Z</published>
-    <updated>2023-08-29T03:45:46.477Z</updated>
+    <title>套接字Socket</title>
+    <link href="https://winhhh666.github.io/2023/08/30/tao-jie-zi-socket/"/>
+    <id>https://winhhh666.github.io/2023/08/30/tao-jie-zi-socket/</id>
+    <published>2023-08-30T04:06:29.000Z</published>
+    <updated>2023-08-30T04:08:07.854Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt; 这个是安装的:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/616883406&quot;&gt;VMware Workstation Pro 17虚拟机软件详细安装教程 - 知乎 (zhihu.com)&lt;/a&gt;</summary>
+    <summary type="html">&lt;p&gt; &lt;strong&gt;套接字&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;网络连接的每一端都需要存储一些信息，这些信息至少包括：&lt;strong&gt;连</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Socket" scheme="https://winhhh666.github.io/tags/Socket/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无法创建虚拟机</title>
+    <link href="https://winhhh666.github.io/2023/08/29/wu-fa-chuang-jian-xu-ni-ji/"/>
+    <id>https://winhhh666.github.io/2023/08/29/wu-fa-chuang-jian-xu-ni-ji/</id>
+    <published>2023-08-29T06:33:02.000Z</published>
+    <updated>2023-08-29T06:34:40.728Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; 无法创建新虚拟机:</summary>
+        
+      
+    
+    
+    
+    <category term="故障" scheme="https://winhhh666.github.io/categories/%E6%95%85%E9%9A%9C/"/>
+    
+    
+    <category term="权限故障" scheme="https://winhhh666.github.io/tags/%E6%9D%83%E9%99%90%E6%95%85%E9%9A%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>不具备执行此操作的权限解决办法</title>
+    <link href="https://winhhh666.github.io/2023/08/29/bu-ju-bei-zhi-xing-ci-cao-zuo-de-quan-xian-jie-jue-ban-fa/"/>
+    <id>https://winhhh666.github.io/2023/08/29/bu-ju-bei-zhi-xing-ci-cao-zuo-de-quan-xian-jie-jue-ban-fa/</id>
+    <published>2023-08-29T06:31:58.000Z</published>
+    <updated>2023-08-29T06:32:37.111Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用VMware搭建linux即CentOS服务器</title>
+    <link href="https://winhhh666.github.io/2023/08/29/ru-he-shi-yong-vmware-da-jian-linux-ji-centos-fu-wu-qi/"/>
+    <id>https://winhhh666.github.io/2023/08/29/ru-he-shi-yong-vmware-da-jian-linux-ji-centos-fu-wu-qi/</id>
+    <published>2023-08-29T03:50:31.000Z</published>
+    <updated>2023-08-29T08:49:03.050Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; [在VMware中安装CentOS7（超详细的图文教程）_vm安装centos7_qq_45743985的博客-CSDN博客](&lt;a</summary>
         
       
     
@@ -38,7 +99,7 @@
     <category term="软件环境安装" scheme="https://winhhh666.github.io/categories/%E8%BD%AF%E4%BB%B6%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/"/>
     
     
-    <category term="VMware" scheme="https://winhhh666.github.io/tags/VMware/"/>
+    <category term="Linux" scheme="https://winhhh666.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -464,71 +525,6 @@ N ^ N = 0
     
     
     <category term="对数器 检验 随机数组" scheme="https://winhhh666.github.io/tags/%E5%AF%B9%E6%95%B0%E5%99%A8-%E6%A3%80%E9%AA%8C-%E9%9A%8F%E6%9C%BA%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从这个链接里面的博客学来的,保存一下链接防止以后找不着</title>
-    <link href="https://winhhh666.github.io/2023/08/13/cong-zhe-ge-lian-jie-li-mian-de-bo-ke-xue-lai-de-bao-cun-yi-xia-lian-jie-fang-zhi-yi-hou-zhao-bu-zhao/"/>
-    <id>https://winhhh666.github.io/2023/08/13/cong-zhe-ge-lian-jie-li-mian-de-bo-ke-xue-lai-de-bao-cun-yi-xia-lian-jie-fang-zhi-yi-hou-zhao-bu-zhao/</id>
-    <published>2023-08-13T06:40:06.000Z</published>
-    <updated>2023-08-13T06:40:37.207Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/qq_58608526/article/details/124652412?spm=1001.2014.3001.5506&quot;&gt;Hexo+Github博客搭建教程_hexo</summary>
-        
-      
-    
-    
-    
-    
-    <category term="-&#39;博客搭建&#39;" scheme="https://winhhh666.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>newdraft</title>
-    <link href="https://winhhh666.github.io/2023/08/13/newdraft/"/>
-    <id>https://winhhh666.github.io/2023/08/13/newdraft/</id>
-    <published>2023-08-13T06:18:57.000Z</published>
-    <updated>2023-08-13T06:18:57.016Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>我的第一篇博客</title>
-    <link href="https://winhhh666.github.io/2023/08/13/wo-de-di-yi-pian-bo-ke/"/>
-    <id>https://winhhh666.github.io/2023/08/13/wo-de-di-yi-pian-bo-ke/</id>
-    <published>2023-08-13T05:38:59.000Z</published>
-    <updated>2023-08-13T06:07:41.065Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;1.2.1 网站&lt;br&gt;参数描述title网站标题subtitle网站副标题description网站描述author您的名字language网站使用的语言timezone网站时区。Hexo 默认使用您电脑的时区。时区列表。比如说：America/New_York,</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
