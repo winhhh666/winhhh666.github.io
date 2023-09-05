@@ -4,6 +4,121 @@
   
     
     <entry>
+      <title>三种命名方法</title>
+      <link href="/2023/09/05/san-chong-ming-ming-fang-fa/"/>
+      <url>/2023/09/05/san-chong-ming-ming-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>1.linux命名法</p><p>test_func</p><p>2.驼峰命名法</p><p>testFunc</p><p>3.微软匈牙利命名法</p><p>TestFunc</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 变量命名 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>argc与argv-c语言main函数中参数的意义</title>
+      <link href="/2023/09/05/argc-yu-argv-c-yu-yan-main-han-shu-zhong-can-shu-de-yi-yi/"/>
+      <url>/2023/09/05/argc-yu-argv-c-yu-yan-main-han-shu-zhong-can-shu-de-yi-yi/</url>
+      
+        <content type="html"><![CDATA[<p> argc:argument count</p><p>argv: argument value字符串数组</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> c语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VS头文件不同符号的区别和使用</title>
+      <link href="/2023/09/01/vs-tou-wen-jian-bu-tong-fu-hao-de-qu-bie-he-shi-yong/"/>
+      <url>/2023/09/01/vs-tou-wen-jian-bu-tong-fu-hao-de-qu-bie-he-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<p>​包含头文件的方式</p><h4 id="No-1-include"><a href="#No-1-include" class="headerlink" title="No.1 #include<stdio.h>"></a>No.1 #include&lt;stdio.h&gt;</h4><p>//在标准库的目录下查找</p><h4 id="No-2-include”xxx-h”"><a href="#No-2-include”xxx-h”" class="headerlink" title="No.2#include”xxx.h”"></a>No.2#include”xxx.h”</h4><p>//先在标准库目录下找,按照路径的方式查找</p><h4 id="No-3-路径"><a href="#No-3-路径" class="headerlink" title="No.3 路径"></a>No.3 路径</h4><p>//绝对路径:带盘符</p><p>#include”F:/fhead.h”</p><p>//相对路径不带盼复</p><p>#includue “myHead.h”</p><p>#include”xxx\ \mm.h”\一般路径用反斜杠或者 \ \</p><p>#include&lt;xxx.h&gt;</p><p>//无法打开包括文件:”xxx.h”: No such file or directory</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 环境配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VS </tag>
+            
+            <tag> 头文件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>机器指令与汇编语言</title>
+      <link href="/2023/08/31/ji-qi-zhi-ling-yu-hui-bian-yu-yan/"/>
+      <url>/2023/08/31/ji-qi-zhi-ling-yu-hui-bian-yu-yan/</url>
+      
+        <content type="html"><![CDATA[<h1 id="机器指令与汇编语言"><a href="#机器指令与汇编语言" class="headerlink" title="机器指令与汇编语言"></a>机器指令与汇编语言</h1><h3 id="1-cpu指令体系"><a href="#1-cpu指令体系" class="headerlink" title="1.cpu指令体系:"></a>1.cpu指令体系:</h3><p>cpu有一个指令集的规范,怎样向cpu下达指令</p><p>每种类型cpu都有统一指令集的规范,不同厂家生产的同类型cpu指令基本是兼容的 </p><p>计算机只有二进制数据0,1,所以每条机器指令是由一串二进制组成</p><p>每条指令都有一个二进制模板,这个模板定义在cpu指令集里</p><h3 id="2-机器代码"><a href="#2-机器代码" class="headerlink" title="2.机器代码"></a>2.机器代码</h3><p>完成一个特定功能的,一连串机器指令的集合</p><p>cpu一条一条指令执行这些机器代码,完成特定的功能</p><h3 id="3-程序"><a href="#3-程序" class="headerlink" title="3.程序"></a>3.程序</h3><p>编写指令给cpu,让他完成特定的功能</p><h3 id="4-汇编语言"><a href="#4-汇编语言" class="headerlink" title="4.汇编语言"></a>4.汇编语言</h3><p>指令助记符号,帮助我们记忆和使用指令模板,大大降低程序的编写复杂度和阅读困难</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏服务器开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 机器指令与汇编语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>office软件页面变成灰色</title>
+      <link href="/2023/08/31/office-ruan-jian-bian-cheng-hui-se/"/>
+      <url>/2023/08/31/office-ruan-jian-bian-cheng-hui-se/</url>
+      
+        <content type="html"><![CDATA[<p> 进入选项-&gt;常规-&gt;个性化设置</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 故障 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> office </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>套接字Socket</title>
       <link href="/2023/08/30/tao-jie-zi-socket/"/>
       <url>/2023/08/30/tao-jie-zi-socket/</url>
