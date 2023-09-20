@@ -6,7 +6,7 @@
   <link href="https://winhhh666.github.io/atom.xml" rel="self"/>
   
   <link href="https://winhhh666.github.io/"/>
-  <updated>2023-09-05T06:03:25.622Z</updated>
+  <updated>2023-09-20T07:46:37.295Z</updated>
   <id>https://winhhh666.github.io/</id>
   
   <author>
@@ -15,6 +15,249 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cpp高级函数特性</title>
+    <link href="https://winhhh666.github.io/2023/09/20/cpp-gao-ji-han-shu-te-xing/"/>
+    <id>https://winhhh666.github.io/2023/09/20/cpp-gao-ji-han-shu-te-xing/</id>
+    <published>2023-09-20T06:04:13.000Z</published>
+    <updated>2023-09-20T07:46:37.295Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;c-初始化&quot;&gt;&lt;a href=&quot;#c-初始化&quot; class=&quot;headerlink&quot; title=&quot;c++初始化&quot;&gt;&lt;/a&gt;c++初始化&lt;/h3&gt;&lt;p&gt;c++ 初始化</summary>
+        
+      
+    
+    
+    
+    <category term="语言" scheme="https://winhhh666.github.io/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="cpp" scheme="https://winhhh666.github.io/tags/cpp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构</title>
+    <link href="https://winhhh666.github.io/2023/09/15/shu-ju-jie-gou/"/>
+    <id>https://winhhh666.github.io/2023/09/15/shu-ju-jie-gou/</id>
+    <published>2023-09-14T23:59:06.000Z</published>
+    <updated>2023-09-20T06:05:54.870Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;顺序表&quot;&gt;&lt;a href=&quot;#顺序表&quot; class=&quot;headerlink&quot; title=&quot;顺序表&quot;&gt;&lt;/a&gt;顺序表&lt;/h1&gt;&lt;p&gt;1.存储数据&lt;/p&gt;
+&lt;p&gt;2.存储数据表的长度&lt;/p&gt;
+&lt;p&gt;3.记录存储容量&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+    <category term="数据结构(c语言)" scheme="https://winhhh666.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c语言头文件</title>
+    <link href="https://winhhh666.github.io/2023/09/12/c-yu-yan-tou-wen-jian/"/>
+    <id>https://winhhh666.github.io/2023/09/12/c-yu-yan-tou-wen-jian/</id>
+    <published>2023-09-12T13:42:01.000Z</published>
+    <updated>2023-09-12T14:17:06.630Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;  什么情况下用&amp;lt;&amp;gt;, 什么情况下用””&lt;/p&gt;
+&lt;p&gt;(1)如果是系统头文件,string.h , stdlib.h等,&amp;lt;&amp;gt;&lt;/p&gt;
+&lt;p&gt;(2)如果是独立的第三方模块安装的 &amp;lt;&amp;gt; 比如</summary>
+        
+      
+    
+    
+    
+    
+    <category term="c语言" scheme="https://winhhh666.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c语言字符与字符串</title>
+    <link href="https://winhhh666.github.io/2023/09/12/c-yu-yan-zi-fu-yu-zi-fu-chuan/"/>
+    <id>https://winhhh666.github.io/2023/09/12/c-yu-yan-zi-fu-yu-zi-fu-chuan/</id>
+    <published>2023-09-12T07:33:03.000Z</published>
+    <updated>2023-09-13T11:56:59.941Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>头文件怎么制作</title>
+    <link href="https://winhhh666.github.io/2023/09/10/tou-wen-jian-zen-me-zhi-zuo/"/>
+    <id>https://winhhh666.github.io/2023/09/10/tou-wen-jian-zen-me-zhi-zuo/</id>
+    <published>2023-09-10T13:07:35.000Z</published>
+    <updated>2023-09-12T07:16:56.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    
+    <category term="c语言" scheme="https://winhhh666.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内存操作函数_宏_条件编译_代码模块</title>
+    <link href="https://winhhh666.github.io/2023/09/10/nei-cun-cao-zuo-han-shu-hong-tiao-jian-bian-yi-dai-ma-mo-kuai/"/>
+    <id>https://winhhh666.github.io/2023/09/10/nei-cun-cao-zuo-han-shu-hong-tiao-jian-bian-yi-dai-ma-mo-kuai/</id>
+    <published>2023-09-10T08:03:16.000Z</published>
+    <updated>2023-09-10T13:06:36.297Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;char* ptr = (int*)malloc(100);&lt;/p&gt;
+&lt;p&gt;memset(ptr , 0x0 , 100);&lt;/p&gt;
+&lt;p&gt;memmove一个一个来的</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>c++引用</title>
+    <link href="https://winhhh666.github.io/2023/09/08/c-yin-yong/"/>
+    <id>https://winhhh666.github.io/2023/09/08/c-yin-yong/</id>
+    <published>2023-09-08T13:43:31.000Z</published>
+    <updated>2023-09-08T14:18:30.884Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; 引用和指针的区别.&lt;/p&gt;
+&lt;p&gt;指针存储的是一块内存的地址,通过地址,可以访问这块内存&lt;br&gt;引用是一个变量的别名,在创建时必须初始化&lt;/p&gt;
+&lt;p&gt;引用在初始化之后不可变,指针可以修改指向的对象&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    
+    <category term="引用" scheme="https://winhhh666.github.io/tags/%E5%BC%95%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>static修饰符</title>
+    <link href="https://winhhh666.github.io/2023/09/05/static-xiu-shi-fu/"/>
+    <id>https://winhhh666.github.io/2023/09/05/static-xiu-shi-fu/</id>
+    <published>2023-09-05T07:18:10.000Z</published>
+    <updated>2023-09-05T07:20:36.153Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="c语言" scheme="https://winhhh666.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码规范与整洁</title>
+    <link href="https://winhhh666.github.io/2023/09/05/dai-ma-gui-fan-yu-zheng-ji/"/>
+    <id>https://winhhh666.github.io/2023/09/05/dai-ma-gui-fan-yu-zheng-ji/</id>
+    <published>2023-09-05T06:21:38.000Z</published>
+    <updated>2023-09-05T06:23:03.343Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>常见程序英文缩写</title>
+    <link href="https://winhhh666.github.io/2023/09/05/chang-jian-cheng-xu-ying-wen-suo-xie/"/>
+    <id>https://winhhh666.github.io/2023/09/05/chang-jian-cheng-xu-ying-wen-suo-xie/</id>
+    <published>2023-09-05T06:08:51.000Z</published>
+    <updated>2023-09-05T06:20:59.420Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; i -&amp;gt; index&lt;/p&gt;
+&lt;p&gt;pointer -&amp;gt; ptr&lt;/p&gt;
+&lt;p&gt;source –&amp;gt; src&lt;/p&gt;
+&lt;p&gt;function -&amp;gt; func&lt;/p&gt;
+&lt;p&gt;left hand side-&amp;gt;lhs&lt;/p&gt;
+&lt;p&gt;right</summary>
+        
+      
+    
+    
+    
+    <category term="程序员英语" scheme="https://winhhh666.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8B%B1%E8%AF%AD/"/>
+    
+    
+    <category term="程序员英语" scheme="https://winhhh666.github.io/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8B%B1%E8%AF%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>三种命名方法</title>
@@ -260,271 +503,6 @@
     
     
     <category term="java" scheme="https://winhhh666.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java文字小游戏</title>
-    <link href="https://winhhh666.github.io/2023/08/25/java-wen-zi-xiao-you-xi/"/>
-    <id>https://winhhh666.github.io/2023/08/25/java-wen-zi-xiao-you-xi/</id>
-    <published>2023-08-25T04:03:56.000Z</published>
-    <updated>2023-08-25T04:14:43.218Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-java&quot; data-language=&quot;java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; &lt;span</summary>
-        
-      
-    
-    
-    
-    <category term="初学者" scheme="https://winhhh666.github.io/categories/%E5%88%9D%E5%AD%A6%E8%80%85/"/>
-    
-    
-    <category term="java" scheme="https://winhhh666.github.io/tags/java/"/>
-    
-    <category term="文字游戏" scheme="https://winhhh666.github.io/tags/%E6%96%87%E5%AD%97%E6%B8%B8%E6%88%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试</title>
-    <link href="https://winhhh666.github.io/2023/08/25/ce-shi/"/>
-    <id>https://winhhh666.github.io/2023/08/25/ce-shi/</id>
-    <published>2023-08-25T03:58:31.000Z</published>
-    <updated>2023-08-25T03:58:31.352Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>0823日记</title>
-    <link href="https://winhhh666.github.io/2023/08/23/0823-ri-ji/"/>
-    <id>https://winhhh666.github.io/2023/08/23/0823-ri-ji/</id>
-    <published>2023-08-23T15:58:03.000Z</published>
-    <updated>2023-08-23T16:13:18.616Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="心得" scheme="https://winhhh666.github.io/categories/%E5%BF%83%E5%BE%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>计算机科学导论</title>
-    <link href="https://winhhh666.github.io/2023/08/21/ji-suan-ji-ke-xue-dao-lun/"/>
-    <id>https://winhhh666.github.io/2023/08/21/ji-suan-ji-ke-xue-dao-lun/</id>
-    <published>2023-08-21T12:58:24.000Z</published>
-    <updated>2023-08-21T14:27:34.794Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;  锁存器&lt;/p&gt;
-&lt;p&gt;![](C:&#92;Users&#92;10482&#92;Pictures&#92;Screenshots&#92;屏幕截图 2023-08-21</summary>
-        
-      
-    
-    
-    
-    <category term="英文课" scheme="https://winhhh666.github.io/categories/%E8%8B%B1%E6%96%87%E8%AF%BE/"/>
-    
-    <category term="计算机科学" scheme="https://winhhh666.github.io/categories/%E8%8B%B1%E6%96%87%E8%AF%BE/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-    
-    
-    <category term="计算机科学" scheme="https://winhhh666.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="计算机存储设计" scheme="https://winhhh666.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%98%E5%82%A8%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>局部变量和成员变量区别</title>
-    <link href="https://winhhh666.github.io/2023/08/19/ju-bu-bian-liang-he-cheng-yuan-bian-liang-qu-bie/"/>
-    <id>https://winhhh666.github.io/2023/08/19/ju-bu-bian-liang-he-cheng-yuan-bian-liang-qu-bie/</id>
-    <published>2023-08-19T14:48:25.000Z</published>
-    <updated>2023-08-20T01:43:56.403Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;​	&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;区别&lt;/th&gt;
-&lt;th&gt;成员变量&lt;/th&gt;
-&lt;th&gt;局部变量&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;类中位置不同&lt;/td&gt;
-&lt;td&gt;类中,方法外&lt;/td&gt;
-&lt;td&gt;方法内,方法</summary>
-        
-      
-    
-    
-    
-    
-    <category term="局部变量" scheme="https://winhhh666.github.io/tags/%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F/"/>
-    
-    <category term="成员变量" scheme="https://winhhh666.github.io/tags/%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javane</title>
-    <link href="https://winhhh666.github.io/2023/08/18/java-nei-cun-fen-pei/"/>
-    <id>https://winhhh666.github.io/2023/08/18/java-nei-cun-fen-pei/</id>
-    <published>2023-08-18T07:45:48.000Z</published>
-    <updated>2023-08-19T14:48:00.209Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt; java内存分配介绍&lt;/p&gt;
-&lt;p&gt;栈:类似子弹夹,先进后出(方法,变量等)&lt;/p&gt;
-&lt;p&gt;方法运行时使用的内存,如main方法运行,进入方法栈中执行&lt;/p&gt;
-&lt;p&gt;堆:存储对象或组,new来创建的,都存储在堆内存&lt;/p&gt;
-&lt;p&gt;方法区:</summary>
-        
-      
-    
-    
-    
-    <category term="初学者" scheme="https://winhhh666.github.io/categories/%E5%88%9D%E5%AD%A6%E8%80%85/"/>
-    
-    
-    <category term="jvm" scheme="https://winhhh666.github.io/tags/jvm/"/>
-    
-    <category term="对象" scheme="https://winhhh666.github.io/tags/%E5%AF%B9%E8%B1%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>标准javabean类</title>
-    <link href="https://winhhh666.github.io/2023/08/18/biao-zhun-javabean-lei/"/>
-    <id>https://winhhh666.github.io/2023/08/18/biao-zhun-javabean-lei/</id>
-    <published>2023-08-18T07:40:26.000Z</published>
-    <updated>2023-08-18T07:44:20.024Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;标准javabean&quot;&gt;&lt;a href=&quot;#标准javabean&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="初学者" scheme="https://winhhh666.github.io/categories/%E5%88%9D%E5%AD%A6%E8%80%85/"/>
-    
-    
-    <category term="JavaBean" scheme="https://winhhh666.github.io/tags/JavaBean/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>构造方法</title>
-    <link href="https://winhhh666.github.io/2023/08/18/gou-zao-fang-fa/"/>
-    <id>https://winhhh666.github.io/2023/08/18/gou-zao-fang-fa/</id>
-    <published>2023-08-18T06:16:34.000Z</published>
-    <updated>2023-08-18T06:40:00.732Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;构造方法作用&quot;&gt;&lt;a href=&quot;#构造方法作用&quot; class=&quot;headerlink&quot; title=&quot;构造方法作用:&quot;&gt;&lt;/a&gt;构造方法作用:&lt;/h4&gt;&lt;p&gt;​	创建对象时,虚拟机自动调用,给成员变量进行初始化&lt;/p&gt;
-&lt;h4</summary>
-        
-      
-    
-    
-    
-    <category term="初学者" scheme="https://winhhh666.github.io/categories/%E5%88%9D%E5%AD%A6%E8%80%85/"/>
-    
-    
-    <category term="java" scheme="https://winhhh666.github.io/tags/java/"/>
-    
-    <category term="构造方法" scheme="https://winhhh666.github.io/tags/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>异或运算</title>
-    <link href="https://winhhh666.github.io/2023/08/15/yi-huo-yun-suan/"/>
-    <id>https://winhhh666.github.io/2023/08/15/yi-huo-yun-suan/</id>
-    <published>2023-08-15T01:58:46.000Z</published>
-    <updated>2023-08-17T00:15:13.564Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;0^N = N
-N ^ N = 0
-交换律
-结合律&lt;span aria-hidden=&quot;true&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="初学者" scheme="https://winhhh666.github.io/categories/%E5%88%9D%E5%AD%A6%E8%80%85/"/>
-    
-    
-    <category term="位运算 异或" scheme="https://winhhh666.github.io/tags/%E4%BD%8D%E8%BF%90%E7%AE%97-%E5%BC%82%E6%88%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java语言自带排序</title>
-    <link href="https://winhhh666.github.io/2023/08/15/java-yu-yan-zi-dai-pai-xu/"/>
-    <id>https://winhhh666.github.io/2023/08/15/java-yu-yan-zi-dai-pai-xu/</id>
-    <published>2023-08-14T23:35:40.000Z</published>
-    <updated>2023-08-15T01:40:11.947Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Arrays.sort(int[] a)&lt;br&gt;这种形式是对一个数组的所有元素进行排序，并且是按从小到大的顺序。&lt;/p&gt;
-&lt;p&gt;举例如下：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-java&quot;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
