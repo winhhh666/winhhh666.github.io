@@ -510,21 +510,21 @@ constexpr 关键字四种细分显示转化语法static_cast
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-09-20
+                    2023-10-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    198
+                    3.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    16 分
                 </div>
                 
 
@@ -582,7 +582,611 @@ int&amp; index(int i)
     return a[i];
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="函数可以定义默认形参值"><a href="#函数可以定义默认形参值" class="headerlink" title="函数可以定义默认形参值"></a>函数可以定义默认形参值</h3><h3 id="type-using"><a href="#type-using" class="headerlink" title="type using"></a>type using</h3><h3 id="auto类型与decltype类型"><a href="#auto类型与decltype类型" class="headerlink" title="auto类型与decltype类型"></a>auto类型与decltype类型</h3>
+<h3 id="函数可以定义默认形参值"><a href="#函数可以定义默认形参值" class="headerlink" title="函数可以定义默认形参值"></a>函数可以定义默认形参值</h3><h3 id="typedef-using"><a href="#typedef-using" class="headerlink" title="typedef           using"></a>typedef           using</h3><h3 id="auto类型与decltype类型"><a href="#auto类型与decltype类型" class="headerlink" title="auto类型与decltype类型"></a>auto类型与decltype类型</h3><h3 id="定义类"><a href="#定义类" class="headerlink" title="定义类"></a>定义类</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">Class Location{
+private:
+    int X, Y;
+public:
+    void initial(int initX, int initY);
+    int GetX();
+    int GetY();
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;ctime&gt;
+#incldue&lt;cstdlib&gt;
+#incldue&lt;iostream&gt;
+
+using namespace std;
+int main()
+{
+    srand(time(NULL));
+    int lucky = rand()%10;
+    
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="c-使用控制符指定书写格式"><a href="#c-使用控制符指定书写格式" class="headerlink" title="c++使用控制符指定书写格式"></a>c++使用控制符指定书写格式</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iomanip&gt;
+#include&lt;iostream&gt;
+using namespace std;
+int main()
+{
+    cout &lt;&lt; oct &lt;&lt; 1234 &lt;&lt; '\n';//八进制数
+    cout &lt;&lt; dec &lt;&lt; 1234 &lt;&lt; '\n';//十进制数
+    cout &lt;&lt; hex &lt;&lt; 1234 &lt;&lt; '\n';//十六进制数
+    
+    cout &lt;&lt; showbase;//显示基数
+    cout &lt;&lt; oct &lt;&lt; 1234 &lt;&lt; '\n';//八进制数
+    cout &lt;&lt; dec &lt;&lt; 1234 &lt;&lt; '\n';//十进制数
+    cout &lt;&lt; hex &lt;&lt; 1234 &lt;&lt; '\n';//十六进制数
+    
+    cout &lt;&lt; setw(10) &lt;&lt; internal &lt;&lt; "abc\n";
+    cout &lt;&lt; setw(10) &lt;&lt; left &lt;&lt; "abc\n";
+    cout &lt;&lt; setw(10) &lt;&lt; right &lt;&lt; "abc\n";
+    
+    cout &lt;&lt; setbase(10);
+    cout &lt;&lt; setw(10) &lt;&lt; internal &lt;&lt; -123 &lt;&lt; '\n';
+    cout &lt;&lt; setw(10) &lt;&lt; left &lt;&lt; -123 &lt;&lt; '\n';
+    cout &lt;&lt; setw(10) &lt;&lt; right &lt;&lt; -123 &lt;&lt; '\n';
+    
+    cout &lt;&lt; setfill('*');
+    cout &lt;&lt; setw(10) &lt;&lt; internal &lt;&lt; -123 &lt;&lt; '\n';
+    cout &lt;&lt; setw(10) &lt;&lt; left &lt;&lt; -123 &lt;&lt; '\n';
+    cout &lt;&lt; setw(10) &lt;&lt; right &lt;&lt; -123 &lt;&lt; '\n';
+    
+    cout &lt;&lt; setfill(' ');
+    
+    cout &lt;&lt; fixed &lt;&lt; setw(10) &lt;&lt; setprecision(2) &lt;&lt; 123.5 &lt;&lt; endl;
+    cout &lt;&lt; scientific &lt;&lt; setw(10) &lt;&lt; setprecision(2) &lt;&lt; 123.5 &lt;&lt; endl;
+    
+    
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="class-template-模板-介绍"><a href="#class-template-模板-介绍" class="headerlink" title="class template (模板)介绍"></a>class template (模板)介绍</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">template&lt;typename T&gt;
+class complex
+{
+public:
+	complex(T r = 0, T i = 0)
+        : re(r), im(i)
+    {}
+    complex&amp; operator += (const complex&amp;);
+    T real () const{ return re;}
+    T imag () const{ return im;}
+private:
+    re, im;
+    friend complex&amp; _doapl(complex*, const complex&amp;);
+    
+};
+
+{
+    complex&lt;double&gt; c1(2.5, 1.5);
+    complex&lt;int&gt; c2(2, 1);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class complex
+{
+public:
+	complex (double r = 0, double i=0)
+        : re(r), im(i)
+    {}
+    complex&amp; operator += {const complex&amp;};
+    double real () const {return re;}
+    double imag () const {return im;}
+ }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>constructor(构造函数)</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class complex
+{
+    public:
+    complex (double r = 0, double i = 0/*默认参数*/)
+        : re(r), im(i)//初始列,初值列
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>const member functions</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">classs complex
+{
+public:
+    complex (double r = 0, double i = 0)
+        : re(r) , im(r)
+        {}
+    complex&amp; operator += (const complex&amp;);
+    double real () const {return re;}
+    double imag () const {return im;}
+private:
+    double re, im;
+    frie
+}
+{
+    complex c1(2,1);
+    cout &lt;&lt; c1.real();
+    cout &lt;&lt; c1.imag();
+}
+{
+    const complex c1(2,1);
+    cout &lt;&lt; c1.real();
+    cout &lt;&lt; c1.imag();
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>构造函数可以放在private区</p>
+<p>单例模式singleton</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class A{
+    public:
+    static A&amp; getInstance();
+    setup(){ ...}
+    private:
+    A();
+    A(const A&amp; rhs);
+    
+};
+
+A&amp; A::getInstance()
+{
+    static A a;
+    return a;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="参数传递"><a href="#参数传递" class="headerlink" title="参数传递"></a>参数传递</h3><p>pass by value vs. pass by reference(to const)</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class complex
+{
+public:
+    complex (double r = 0, double i = 0)
+        : re(r), im{i}
+    {}
+    complex&amp; operator += {const complex&amp;};
+    double real () const {return re;}
+    double imag () const {return im;}
+private:
+    double re, im;
+    friend complex&amp; _doapl (complex*, const complex&amp;);
+};
+
+{
+    complex c1(2, 1);
+    complex c2;
+    c2+= c1;
+    cout &lt;&lt; c2;
+}
+
+
+ostream&amp;
+operator &lt;&lt; (ostream&amp; os, const complex&amp; x){
+    retunn os &lt;&lt;'()' &lt;&lt; real(x) &lt;&lt;',' &lt;&lt; imag(x) &lt;&lt;')';
+    
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>都尽量引用传递</p>
+<h3 id="友元-P4-25分"><a href="#友元-P4-25分" class="headerlink" title="友元(P4 -25分)"></a>友元(P4 -25分)</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class complex
+{
+public:
+    complex (double r = 0, double i = 0)
+        : re(r), im{i}
+    {}
+    complex&amp; operator += {const complex&amp;};
+    double real () const {return re;}
+    double imag () const {return im;}
+private:
+    double re, im;
+    friend complex&amp; _doapl (complex*, const complex&amp;);
+};
+
+inline complex&amp;
+_doapl (complex* ths, const complex&amp; r)
+{
+    rhs-&gt;re += r.re;
+    ths-&gt;im += r.im;
+    return *ths;
+}//自由取得friend的private成员
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="相同class的各种objects互为friends-友元"><a href="#相同class的各种objects互为friends-友元" class="headerlink" title="相同class的各种objects互为friends(友元)"></a>相同class的各种objects互为friends(友元)</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class complex
+{
+    public:
+    complex(double r = 0, double i= 0)
+        : re(r), im(i)
+        {}
+    int func(const complex&amp; param)
+    {
+        return paraml.re+ param.im;
+    }
+    private:
+    double re, im;
+};
+{
+    complex c1(2, 1);
+    complex c2;
+    c2.func(c1);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="操作符重载-成员函数版-P5"><a href="#操作符重载-成员函数版-P5" class="headerlink" title="操作符重载-成员函数版(P5)"></a>操作符重载-成员函数版(P5)</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">inline</span> complex<span class="token operator">&amp;</span>
+<span class="token function">_doapl</span><span class="token punctuation">(</span>complex<span class="token operator">*</span> ths<span class="token punctuation">,</span> <span class="token keyword">const</span> complex<span class="token operator">&amp;</span> r<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    ths<span class="token operator">-&gt;</span>re <span class="token operator">+=</span> r<span class="token punctuation">.</span>re<span class="token punctuation">;</span>
+    ths<span class="token operator">-&gt;</span>im <span class="token operator">+=</span> r<span class="token punctuation">.</span>im<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token operator">*</span>ths<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">inline</span> complex<span class="token operator">&amp;</span> 
+complex<span class="token operator">::</span>operator <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token keyword">const</span> complex<span class="token operator">&amp;</span> r<span class="token punctuation">)</span><span class="token comment">//含有隐藏参数this</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">_doapl</span> <span class="token punctuation">(</span>this<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">{</span>
+    complex <span class="token function">c1</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    complex <span class="token function">c2</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    c2 <span class="token operator">+=</span> c1<span class="token punctuation">;</span>
+    
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="return-by-reference语法分析"><a href="#return-by-reference语法分析" class="headerlink" title="return  by reference语法分析"></a>return  by reference语法分析</h3><p>传递者无需知道接收者是以reference形式接收</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">inline complex&amp;
+_doapl(complex* ths, const complex&amp; r)
+{
+    ,,,
+    return *ths;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="操作符重载-非成员函数"><a href="#操作符重载-非成员函数" class="headerlink" title="操作符重载-非成员函数"></a>操作符重载-非成员函数</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">{
+    complex c1(2, 1);
+    complex c2;
+    c2 = c1+ c2;
+    c2 = c1 + 5;
+    c2 = 7 + c1;
+}
+//为了对付client的三种可能用法,这儿对应开发三个函数, 下面这些函数绝不可return by reference, 因为, 它们返回的必定是个local object
+inline complex
+operator + (const complex&amp; x, const complex&amp; y){
+    return complex (real (x) + real(y), imag (x) + imag(y));
+}
+inline complex
+operator + (const complex&amp; x, double y)
+{
+    return complex (real(x)+y, imag(x));
+}
+
+inline complex
+operator + (double x, const complex&amp; y)
+{
+    return complex (x + real(y), imag (y));
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="临时对象temp-object-typename"><a href="#临时对象temp-object-typename" class="headerlink" title="临时对象temp object      typename()"></a>临时对象temp object      typename()</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">inline complex
+operator + (const complex&amp; x)
+{
+    return x;
+}//这个可以return by reference
+
+inline complex
+operator - (const complex&amp; x)
+{
+    return complex (-real(x), -imag(x));
+}//这个函数绝不可能return by reference,因为其返回的必定是个local object<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">inline bool
+operator == (const complex&amp; x, const complex&amp; y)
+{
+    return real(x) == real(y) &amp;&amp; imag(x) == imag(y);
+}
+
+inline bool
+operator == (const complex&amp; x, double y){
+    return real(x) == y &amp;&amp; imag(x) == 0;
+}
+
+inline bool
+operator == (double x, const complex&amp; y)
+{
+    return x== real(y) &amp;&amp; imag(y) == 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">{
+    complex c1(2, 1);
+    cout &lt;&lt; conj(c1);
+    cout &lt;&lt; c1 &lt;&lt; conj(c1);
+}
+inline complex conj(const complex&amp; x){
+ return complex(real(x), -imag(x));   
+}
+
+#include&lt;iostream.h&gt;
+ostream&amp;
+operator &lt;&lt; (ostream&amp; os, const complex&amp; x)
+{
+    return os &lt;&lt; '(' &lt;&lt; real(x) &lt;&lt;',' &lt;&lt; imag(x) &lt;&lt;')';
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="c-map容器"><a href="#c-map容器" class="headerlink" title="c++map容器"></a>c++map容器</h3><p>底层会将元素自动排序</p>
+<p>#include<map></map></p>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">template &lt; class Key, class T, class Compare = less&lt;Key&gt;, class Alloc = allocator&lt;pair&lt;const Key,T&gt; &gt; &gt; class map; 
+			<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p>map&lt;char, int&gt; s</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">for(map&lt;char, int&gt;::ierator it = s.begin(); it != s.end();it++){
+    cout &lt;&lt; it-&gt;first &lt;&lt; "---" &lt;&lt;it-&gt;second &lt;&lt; endl;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="常用接口"><a href="#常用接口" class="headerlink" title="常用接口"></a>常用接口</h3><p>map&lt;char, int&gt; s 创建了一个map ,命名为s</p>
+<h3 id="大小size"><a href="#大小size" class="headerlink" title="大小size()"></a>大小size()</h3><p>size_type size() const;</p>
+<p>cout &lt;&lt; s.size() &lt;&lt; endl;</p>
+<h3 id="插入元素insert"><a href="#插入元素insert" class="headerlink" title="插入元素insert()"></a>插入元素insert()</h3><p> 函数原型: single element</p>
+<p>pair&lt;iterator, bool&gt; insert (const value_type&amp; val);</p>
+<p>template <class p=""> pair&lt;iterator, bool&gt; insert (p&amp;&amp; val);</class></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">s.inert(pair&lt;char, int&gt;('d', 4));
+//这里的pair表示一对的关系,相当于struct pair{char a; int b}的一对数据,在接下来会详细学pair的用法
+//或者用下面的这种方法
+s['d'] = 4; //这与上面的效果是一样的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="删除元素erase"><a href="#删除元素erase" class="headerlink" title="删除元素erase()"></a>删除元素erase()</h3><p>删除一个元素,或者一段区间的元素,自动缩减空间使用</p>
+<p>函数原型:</p>
+<p>iterator erase (iterator position);</p>
+<p>iterator erase (iterator first, iterator last);</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">s.erase(s.begin());
+s.erase(s.begin(), s.end());<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="清空元素"><a href="#清空元素" class="headerlink" title="清空元素"></a>清空元素</h3><p>s.clear()</p>
+<h3 id="查找元素-find"><a href="#查找元素-find" class="headerlink" title="查找元素 find()"></a>查找元素 find()</h3><p>函数原型: iterator find (const value_type&amp; val) const;</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">cout &lt;&lt; s.find('d') -&gt; second &lt;&lt; endl;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>或者实现找到的删除指定元素</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">s.erase(s.find('d'));<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="pair类模板"><a href="#pair类模板" class="headerlink" title="pair类模板"></a>pair类模板</h1><p>相关头文件</p>
+<p>#include<utility></utility></p>
+<p>但是笔者亲测在编译器可以不声明这个头文件而直接使用，貌似在C++中，pair被放入了std命名空间中了。</p>
+<h3 id="初始化-1"><a href="#初始化-1" class="headerlink" title="初始化"></a>初始化</h3><p>template &lt;class T1, class T2&gt; struct pair;</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">pair&lt;int, int&gt; p;
+pair&lt;int, int&gt; p(10, 20);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">map&lt;char, int&gt; m;
+m.insert(pair&lt;char, int&gt;('a', 10));<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">pair&lt;int, int&gt; p(10, 20);
+cout &lt;&lt; p.first &lt;&lt; " " &lt;&lt; p.second&lt;&lt; endl;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>make_pair</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">pair&lt;int int&gt; p;
+p.first = 10;
+p.second = 20;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>或者</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">pair&lt;int, int&gt; p;
+p = make_pair(10, 20);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="函数返回多值"><a href="#函数返回多值" class="headerlink" title="函数返回多值"></a>函数返回多值</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;string&gt;
+#include&lt;utility&gt;
+
+using namespace std;
+
+pair&lt;string, int&gt; getClass(int id) {
+    return make_pair("DOTCPP!", id);
+}
+
+int main(int argc, char **argv) {
+    pair&lt;string, int&gt; a;
+    a= getClass(10);
+    cout &lt;&lt; a.first &lt;&lt; " " &lt;&lt; a.second  &lt;&lt; endl;
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="多返回值"><a href="#多返回值" class="headerlink" title="多返回值"></a>多返回值</h2><h3 id="双返回值-pair"><a href="#双返回值-pair" class="headerlink" title="双返回值 pair"></a>双返回值 pair</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">pair&lt;string, int&gt; getClass(int id){
+    return make_pair("DOTCPP!", id);
+}
+
+int main(int argc, char **argv) {
+    pair&lt;string, int&gt; a;
+    a = getClass(10);
+    cout &lt;&lt; a.first &lt;&lt; " " &lt;&lt; a.second &lt;&lt; endl;
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="c-加快输入效率"><a href="#c-加快输入效率" class="headerlink" title="c++加快输入效率"></a>c++加快输入效率</h1><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
+using namespace std;
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="c-快读"><a href="#c-快读" class="headerlink" title="c++快读"></a>c++快读</h1><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">inline int read()
+{
+    int X = 0; bool flag = 1; char ch = getchar();
+    while(ch&lt;'0' || ch&gt;'9') {
+        if(ch == '-') flag = 0;
+        ch = getchar;
+    }
+    while(ch&gt;='0' &amp;&amp; ch&lt;'9') {
+        X = (X&lt;&lt;1) + (X&lt;&lt;3) + ch-'0';
+        ch = getchar();
+    }
+    if(flag) return X;
+    return ~(X-1);
+}
+
+{
+int tmp = read();
+    std::cout &lt;&lt; temp &lt;&lt; std::endl;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>扩展:快速输出</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">inline void write(int X)
+{
+	if(X&lt;0) {
+        X = ~(X-1);
+        putchar('-');
+    }
+    if(X&gt;9) write(X/10);
+    putchar(X%10 + '0');
+    
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="goto跳转语句"><a href="#goto跳转语句" class="headerlink" title="goto跳转语句"></a>goto跳转语句</h2><p>goto FLAG:</p>
+<p>FLAG:</p>
+<p><strong>不推荐使用</strong></p>
+<h2 id="数组逆置"><a href="#数组逆置" class="headerlink" title="数组逆置"></a>数组逆置</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int arr[10];
+int beg = 0;
+int end = sizeof(arr)/sizeof(arr[0]) -1;
+for(int i=beg, j = end; i&lt;= end/2/*i&lt;j*/; i++, j--){
+    //n -1 - i;
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">for(int i =1; i &lt;n ;i++ ){//已经排序好的个数
+    for(int j=0; j&lt;n-i j++){//进行交换的
+        if(a[j+1] &lt; a[j]){
+            swap(a[j+1], a[j]);
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="重复执行n次的简单模板"><a href="#重复执行n次的简单模板" class="headerlink" title="重复执行n次的简单模板"></a>重复执行n次的简单模板</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">while(n--) {
+    ...
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="曼哈顿距离-直走-d-abs-x1-x2-abs-y1-y2"><a href="#曼哈顿距离-直走-d-abs-x1-x2-abs-y1-y2" class="headerlink" title="曼哈顿距离(直走):d = abs(x1-x2)+abs(y1-y2);"></a>曼哈顿距离(直走):d = abs(x1-x2)+abs(y1-y2);</h3><h3 id="切比雪夫距离-直走加斜着走-最短距离-min-abs-x1-x2-abs-y1-y2"><a href="#切比雪夫距离-直走加斜着走-最短距离-min-abs-x1-x2-abs-y1-y2" class="headerlink" title="切比雪夫距离:直走加斜着走: 最短距离: min(abs(x1-x2), abs(y1-y2));"></a>切比雪夫距离:直走加斜着走: 最短距离: min(abs(x1-x2), abs(y1-y2));</h3><h3 id="输入一个n，再输入n个整数。将这个数组顺时针旋转k-k"><a href="#输入一个n，再输入n个整数。将这个数组顺时针旋转k-k" class="headerlink" title="输入一个n，再输入n个整数。将这个数组顺时针旋转k(k <= n)次，最后将结果输出。"></a>输入一个n，再输入n个整数。将这个数组顺时针旋转k(k &lt;= n)次，最后将结果输出。</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">//数组一个一个拿,最后循环做这个就行了
+#include&lt;iostream&gt;
+using namespace std;
+int a[100];
+int main() {
+    int n, k;
+    cin &gt;&gt; n &gt;&gt; k;
+    for(int i= 0; i&lt;n; i++){
+        cin &gt;&gt; a[i];
+    }
+    while(k--){
+        int t = a[n-1];
+        for(int i = n-2; i&gt;=0; i--){
+            a[i+1] = a[i];
+        }
+        a[0] = t;
+    }
+    for(int i = 0; i&lt;n; i++) cout &lt;&lt; a[i] &lt;&lt; a[i] &lt;&lt; ' ';//循环输出
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="const修饰指针"><a href="#const修饰指针" class="headerlink" title="const修饰指针"></a>const修饰指针</h1><p>常量(的)指针:</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">const int* p = &amp;a;//指针指向可以修改,但是指针指向的值不可以改<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p>指针(的)常量:</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int* const p = &amp;a;
+//指针的指向不可以改,指针指向的值可以改
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>即修饰常量又修饰指针:</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">const int* const p = &amp;a;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="结构体赋值"><a href="#结构体赋值" class="headerlink" title="结构体赋值:"></a>结构体赋值:</h1><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">struct Student
+{
+    string name;
+    int age;
+    int score;
+    
+}s3;
+struct Student S1;
+struct Student S2 = {"李四", 19, 80};
+3.定义结构体时创建结构体变量
+c++中struct创建结构体变量时可以省略<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>结构体数组:</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">struct student arr[3] = {
+    {"张三", 18, 80},
+    {"李四", 19, 60},
+    {"李四", 19, 60}
+};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="结构体指针"><a href="#结构体指针" class="headerlink" title="结构体指针:"></a>结构体指针:</h3><p>student *p = &amp;s;</p>
+<h1 id="char数组难点"><a href="#char数组难点" class="headerlink" title="char数组难点:"></a>char数组难点:</h1><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">char a[] = {'C', '+', '+'};
+char b[4] = {'D', '+', '+', '\0'};
+char c[5] = {'E', '+', '+', '\0'};			// 最后一个位置会补\0
+
+cout &lt;&lt; a &lt;&lt; endl;			// 输出"C++D++"，因为字符数组a不会自动添加'\0'，cout会读取到b的部分<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="string库函数"><a href="#string库函数" class="headerlink" title="string库函数:"></a>string库函数:</h2><p>string s;</p>
+<p>s.find(‘a’);//从左往右找</p>
+<p>s.rfind(‘a’);//从右往左找</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"># include&lt;string&gt;
+# include&lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+	string str = "123456123456123456";
+	cout&lt;&lt;str&lt;&lt;endl&lt;&lt;"0123456789ABCDEFGHJ"&lt;&lt;endl;//方便查看上面字符串的下标 
+	
+	int pos = str.rfind("456",12);
+	cout&lt;&lt;pos&lt;&lt;endl;;
+	return 0;
+} <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>二者均返回其在字符串中的下标</p>
+<p>rfind(str, pos)从pos开始,向前查找符合条件的字符串</p>
+<p>如果前面没有符合条件的字符串会返回string::nops</p>
+<p>int pos = string::nops;//此时pos为-1</p>
+<p>运行结果：</p>
+<p>那么问题来了，如果从pos开始，前面没有符合条件的字符串，会返回什么位置呢？</p>
+<pre><code>int pos = str.rfind("456",2);
+运行结果：
+</code></pre>
+<p>返回无匹配项，即string::npos</p>
+<p>另外，如果指定的位置，恰好处在原字符串中可以匹配的某一位置时呢？</p>
+<pre><code>int pos = str.rfind("456",3);//位置4,5,6返回值也相同
+</code></pre>
+<p>运行结果：</p>
+<p>上面的情况是处在第一个可以匹配的子串当中，会返回该子串的位置，但如果是处于第二个可匹配的子串当中，那么又会返回什么呢？</p>
+<pre><code>int pos = str.rfind("456",9);//位置10,11,12返回值也相同
+</code></pre>
+<h3 id="综上所述可以得出rfind-str-pos-实际的开始的位置是，pos-str-size-，即从该位置开始（不包括该位置字符）向前寻找匹配项-如果有则返回字符串位置，如果没有则返回string-npos。"><a href="#综上所述可以得出rfind-str-pos-实际的开始的位置是，pos-str-size-，即从该位置开始（不包括该位置字符）向前寻找匹配项-如果有则返回字符串位置，如果没有则返回string-npos。" class="headerlink" title="综上所述可以得出rfind(str,pos)实际的开始的位置是，pos+str.size()，即从该位置开始（不包括该位置字符）向前寻找匹配项,如果有则返回字符串位置，如果没有则返回string::npos。"></a>综上所述<em>可以得出rfind(str,pos)实际的开始的位置是，pos+str.size()，即从该位置开始（不包括该位置字符）向前寻找匹配项,如果有则返回字符串位置，如果没有则返回string::npos。</em></h3><p><em><strong>find(str,pos)是用来寻找从pos开始(包括pos处字符)匹配str的位置</strong></em></p>
+<h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><p>char s[100];</p>
+<p>cin.getline(s, 100);</p>
+<p>fgets(a, 100, stdin);//会把回车读进来</p>
+<p>如果是string s;</p>
+<p>可以用getline(cin, s);来读一整行</p>
+<p>puts(s);等价于printf(“%s\n”, s);</p>
+<p>#include&lt;string.h&gt;</p>
+<p>strlen(s); //时间复杂度O(n);</p>
+<p>strcmp(s1, s2);//大于就是1, 等于就是0, 小于就是-1;</p>
+<h2 id="string字符串"><a href="#string字符串" class="headerlink" title="string字符串"></a>string字符串</h2><p>string s1;</p>
+<p>string s2 = s1;</p>
+<p>string s3 = “hita”;</p>
+<p>string s4 (10, ‘c’);</p>
+<p>string的输入只能用cin, 但是输出可以使用printf(“%s\n”, s1.c_str());//其中s1.c_str()返回的是转化成字符数组的指针</p>
+<p>s1.empty();//非空返回false, 空返回true</p>
+<p>s1.size();//O(1)</p>
+<p>支持两个string相加</p>
+<p>至少有一个是string型,如果两个都是字符串会报错</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">string s1 = "helloworld";
+
+for(char/*auto*/ c : s1){
+
+cout &lt;&lt; c &lt;&lt; endl;
+
+}
+
+for(char &amp;c : s1){
+    //这里可以通过改变c来改变s1中的某一个字符
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>char str[101];</p>
+<p>fgets(str, 101, stdin);</p>
+<p>求某个字符串中的某一段:</p>
+<p>s.substr(i, len);//如果len很长,那么最多到最后一个就截止了</p>
+<p>s.substr(i+1);//从i+1往后所有的</p>
+
                 
             </div>
             <hr/>
@@ -753,18 +1357,17 @@ int&amp; index(int i)
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/09/20/cpp-gao-ji-han-shu-te-xing/">
+                <a href="/2023/09/22/shu-ju-jie-gou-c-cpp/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="cpp高级函数特性">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="数据结构c/cpp">
                         
-                        <span class="card-title">cpp高级函数特性</span>
+                        <span class="card-title">数据结构c/cpp</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -774,27 +1377,22 @@ int&amp; index(int i)
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-20
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-22
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%AF%AD%E8%A8%80/" class="post-category">
-                                    语言
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Satan Pig
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/cpp/">
-                        <span class="chip bg-color">cpp</span>
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                        <span class="chip bg-color">数据结构</span>
                     </a>
                     
                 </div>
@@ -1076,7 +1674,7 @@ int&amp; index(int i)
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">10.9k</span>
+                        class="white-color">21.3k</span>
             
             
             
