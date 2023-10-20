@@ -6,7 +6,7 @@
   <link href="https://winhhh666.github.io/atom.xml" rel="self"/>
   
   <link href="https://winhhh666.github.io/"/>
-  <updated>2023-10-14T04:46:30.539Z</updated>
+  <updated>2023-10-20T17:05:10.534Z</updated>
   <id>https://winhhh666.github.io/</id>
   
   <author>
@@ -15,6 +15,97 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的第一个游戏推箱子</title>
+    <link href="https://winhhh666.github.io/2023/10/21/wo-de-di-yi-ge-you-xi-tui-xiang-zi/"/>
+    <id>https://winhhh666.github.io/2023/10/21/wo-de-di-yi-ge-you-xi-tui-xiang-zi/</id>
+    <published>2023-10-20T17:04:10.000Z</published>
+    <updated>2023-10-20T17:05:10.534Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-c+&quot; data-language=&quot;c+&quot;&gt;&lt;code class=&quot;language-c+&quot;&gt;// ConsoleApplication1.cpp : 此文件包含 &quot;main&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>VS工具模块扩展</title>
+    <link href="https://winhhh666.github.io/2023/10/18/vs-gong-ju-mo-kuai-kuo-zhan/"/>
+    <id>https://winhhh666.github.io/2023/10/18/vs-gong-ju-mo-kuai-kuo-zhan/</id>
+    <published>2023-10-18T06:11:19.000Z</published>
+    <updated>2023-10-18T07:05:26.884Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; VS visual studio 2019 获取新的工具或功能 安装新的模块&lt;/p&gt;
+&lt;h4 id=&quot;点击：工具-获取工具与功能-点击打开模块安装器：installer&quot;&gt;&lt;a href=&quot;#点击：工具-获取工具与功能-点击打开模块安装器：installer&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>stl库函数</title>
+    <link href="https://winhhh666.github.io/2023/10/18/stl-ku-han-shu/"/>
+    <id>https://winhhh666.github.io/2023/10/18/stl-ku-han-shu/</id>
+    <published>2023-10-17T16:07:02.000Z</published>
+    <updated>2023-10-19T13:26:36.237Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;include&quot;&gt;&lt;a href=&quot;#include&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="cpp" scheme="https://winhhh666.github.io/tags/cpp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cpp类和对象</title>
+    <link href="https://winhhh666.github.io/2023/10/14/cpp-lei-he-dui-xiang/"/>
+    <id>https://winhhh666.github.io/2023/10/14/cpp-lei-he-dui-xiang/</id>
+    <published>2023-10-14T04:47:53.000Z</published>
+    <updated>2023-10-19T10:18:36.347Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;c-面向对象三大特性-封装继承-多态&quot;&gt;&lt;a href=&quot;#c-面向对象三大特性-封装继承-多态&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="cpp" scheme="https://winhhh666.github.io/categories/cpp/"/>
+    
+    
+    <category term="类和对象" scheme="https://winhhh666.github.io/tags/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>函数重载</title>
@@ -201,7 +292,7 @@
     <link href="https://winhhh666.github.io/2023/09/20/cpp-gao-ji-han-shu-te-xing/"/>
     <id>https://winhhh666.github.io/2023/09/20/cpp-gao-ji-han-shu-te-xing/</id>
     <published>2023-09-20T06:04:13.000Z</published>
-    <updated>2023-10-13T16:57:21.311Z</updated>
+    <updated>2023-10-16T02:08:04.449Z</updated>
     
     
       
@@ -378,110 +469,6 @@
         
         
     <summary type="html">&lt;p&gt;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="c语言" scheme="https://winhhh666.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>代码规范与整洁</title>
-    <link href="https://winhhh666.github.io/2023/09/05/dai-ma-gui-fan-yu-zheng-ji/"/>
-    <id>https://winhhh666.github.io/2023/09/05/dai-ma-gui-fan-yu-zheng-ji/</id>
-    <published>2023-09-05T06:21:38.000Z</published>
-    <updated>2023-09-05T06:23:03.343Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>常见程序英文缩写</title>
-    <link href="https://winhhh666.github.io/2023/09/05/chang-jian-cheng-xu-ying-wen-suo-xie/"/>
-    <id>https://winhhh666.github.io/2023/09/05/chang-jian-cheng-xu-ying-wen-suo-xie/</id>
-    <published>2023-09-05T06:08:51.000Z</published>
-    <updated>2023-09-05T06:20:59.420Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt; i -&amp;gt; index&lt;/p&gt;
-&lt;p&gt;pointer -&amp;gt; ptr&lt;/p&gt;
-&lt;p&gt;source –&amp;gt; src&lt;/p&gt;
-&lt;p&gt;function -&amp;gt; func&lt;/p&gt;
-&lt;p&gt;left hand side-&amp;gt;lhs&lt;/p&gt;
-&lt;p&gt;right</summary>
-        
-      
-    
-    
-    
-    <category term="程序员英语" scheme="https://winhhh666.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8B%B1%E8%AF%AD/"/>
-    
-    
-    <category term="程序员英语" scheme="https://winhhh666.github.io/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8B%B1%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三种命名方法</title>
-    <link href="https://winhhh666.github.io/2023/09/05/san-chong-ming-ming-fang-fa/"/>
-    <id>https://winhhh666.github.io/2023/09/05/san-chong-ming-ming-fang-fa/</id>
-    <published>2023-09-05T06:01:33.000Z</published>
-    <updated>2023-09-05T06:03:25.622Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;1.linux命名法&lt;/p&gt;
-&lt;p&gt;test_func&lt;/p&gt;
-&lt;p&gt;2.驼峰命名法&lt;/p&gt;
-&lt;p&gt;testFunc&lt;/p&gt;
-&lt;p&gt;3.微软匈牙利命名法&lt;/p&gt;
-&lt;p&gt;TestFunc&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    
-    <category term="变量命名" scheme="https://winhhh666.github.io/tags/%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>argc与argv-c语言main函数中参数的意义</title>
-    <link href="https://winhhh666.github.io/2023/09/05/argc-yu-argv-c-yu-yan-main-han-shu-zhong-can-shu-de-yi-yi/"/>
-    <id>https://winhhh666.github.io/2023/09/05/argc-yu-argv-c-yu-yan-main-han-shu-zhong-can-shu-de-yi-yi/</id>
-    <published>2023-09-05T05:45:15.000Z</published>
-    <updated>2023-09-05T05:47:05.332Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt; argc:argument count&lt;/p&gt;
-&lt;p&gt;argv: argument</summary>
         
       
     
