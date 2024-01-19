@@ -511,21 +511,21 @@ public:
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-10-19
+                    2023-12-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3k
+                    7.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    30 分
                 </div>
                 
 
@@ -1006,6 +1006,686 @@ public:
     }
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h2 id="继承的三种方式"><a href="#继承的三种方式" class="headerlink" title="继承的三种方式"></a>继承的三种方式</h2><p>![](C:\Users\10482\Pictures\Screenshots\屏幕截图 2023-11-01 144331.png)</p>
+<h2 id="继承中的对象模型"><a href="#继承中的对象模型" class="headerlink" title="继承中的对象模型"></a>继承中的对象模型</h2><p>在父类中所有非静态属性都会被子类继承下去<br>父类中私有成员属性 被编译器隐藏了 ,因此访问不到 但是确实被继承了</p>
+<p>使用sizeof(Son)就可以得出结论<br>//利用开发人员命令提示工具查看对象模型</p>
+<p>跳转盘符 F:</p>
+<p>跳转文件路径 cd 具体路径下<br>查看命名</p>
+<p>cl /d1 reportSingleClassLayout 文件名</p>
+<h2 id="继承中的构造和析构顺序"><a href="#继承中的构造和析构顺序" class="headerlink" title="继承中的构造和析构顺序"></a>继承中的构造和析构顺序</h2><p>父类构造-&gt;子类构造-&gt;子类析构-&gt;父类构造</p>
+<p>可以在类中对构造函数进行重载来检验</p>
+<p>如果想通过子类对象访问父类同名成员变量的值,必须要加作用域 s.Base::m_A</p>
+<p>子类对象直接调用与父类成员函数同名的成员函数,也是就近原则,如果想调用父类的要加作用域</p>
+<p>子类同名函数会完全覆盖掉父类中的同名函数,必须加上作用域才能访问</p>
+<h2 id="继承中同名静态成员处理"><a href="#继承中同名静态成员处理" class="headerlink" title="继承中同名静态成员处理"></a>继承中同名静态成员处理</h2><p>类内声明,类外初始化 ,所有对象共享同一块内存</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Base{
+public :
+    static int m_A;
+};
+int Base::m_A = 100;
+
+class Son : public Base
+{
+public:
+    static int m_A;
+};
+int Son::m_A = 200;
+
+void test01(){
+    //第一种通过对象访问
+    Son s;
+    cout &lt;&lt; s.m_A &lt;&lt; endl;
+    cout &lt;&lt; s.Base::m_A&lt;&lt;endl;
+    //第二种访问方式 通过类名访问
+    cout &lt;&lt; Son::m_A&lt;&lt; endl;
+    //第一个:: 通过类名方式访问 第二个:: 访问父类作用域
+    cout &lt;&lt; Son::Base::m_A &lt;&lt; endl;
+    
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="多继承语法"><a href="#多继承语法" class="headerlink" title="多继承语法"></a>多继承语法</h2><p>c++允许一个类继承多个类</p>
+<p>class 子类 : 继承方式 父类1, 继承方式 父类2 </p>
+<p>多继承可能引发父类同名成员出现,所以要加作用域</p>
+<p>实际开发中使用较少(不建议使用)</p>
+<p>多继承内存: 是继承来的变量加上自己的变量</p>
+<p>开发人员命令提示符:</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">进入文件所在目录 使用如下命令
+    c1 /d1 reportSingleClassLayoutSon   "文件名"//最后的 Son 是类名 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>当父类中出现同名成员 访问需要加上作用域</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">s.Base1::m_age;
+s.Base2::m_age;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="菱形继承"><a href="#菱形继承" class="headerlink" title="菱形继承"></a>菱形继承</h2><h3 id="两个类有共同的父类和共同的子类"><a href="#两个类有共同的父类和共同的子类" class="headerlink" title="两个类有共同的父类和共同的子类"></a>两个类有共同的父类和共同的子类</h3><h4 id="概念-两个派生类继承同一个基类-又有某个类同时继承这两个派生类-这种继承被称为菱形继承或钻石继承"><a href="#概念-两个派生类继承同一个基类-又有某个类同时继承这两个派生类-这种继承被称为菱形继承或钻石继承" class="headerlink" title="概念:两个派生类继承同一个基类   又有某个类同时继承这两个派生类 这种继承被称为菱形继承或钻石继承"></a>概念:两个派生类继承同一个基类   又有某个类同时继承这两个派生类 这种继承被称为菱形继承或钻石继承</h4><p>继承重复成员浪费空间,那么如何解决这个问题呢?</p>
+<h2 id="使用虚继承的方法"><a href="#使用虚继承的方法" class="headerlink" title="使用虚继承的方法"></a>使用<strong>虚继承</strong>的方法</h2><p>两个派生类使用虚继承的方式继承基类</p>
+<p>底层:用两个指针实现,一个vbptr(virtual base pointer)指向vbtable中记录的偏移量</p>
+<p>这里面的两个指针加上各自偏移量后指向的成员变量地址相同</p>
+<h1 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h1><p>静态多态: 函数重载 运算符重载    复用函数名</p>
+<p>动态多态:派生类和虚函数 实现运行时多态</p>
+<p>区别:</p>
+<p>​	静态多态函数地址早绑定 - 编译阶段确定函数地址 早绑定</p>
+<p>​	动态多态函数地址晚绑定 - 运行阶段确定函数地址 晚绑定</p>
+<p>父类引用可以用来接收子类的对象</p>
+<p>动态多态满足条件 </p>
+<p>​	有继承关系         子类重写父类虚函数</p>
+<p>空类的大小是1,类中的函数不算在对象的大小中 </p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Animal
+{
+public:
+    virtual void speak()
+    {
+        cout &lt;&lt; "动物在说话" &lt;&lt; endl;
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>vfptr(virtual function pointer)</p>
+<p>animal类内部结构:</p>
+<p>vfptr-&gt;vftable </p>
+<p>重写:函数返回值 参数表 函数名 完全相同</p>
+<p>子类重写父类的虚函数</p>
+<p>子类中的虚函数表内部会替换成子类的虚函数地址 </p>
+<p>这样用父类引用传递子类对象时就可以调用子类对象的重写函数,实现动态多态</p>
+<h3 id="多态好处"><a href="#多态好处" class="headerlink" title="多态好处"></a>多态好处</h3><p>实现计算器类</p>
+<p>真实开发中尽量遵循开闭原则 对扩展进行开放 减少对源码的修改   </p>
+<p>实现计算器的抽象类</p>
+<p>再分别实现加减乘除的计算器的类</p>
+<p>结构清晰 可读性强</p>
+<h3 id="纯虚函数和抽象类"><a href="#纯虚函数和抽象类" class="headerlink" title="纯虚函数和抽象类"></a>纯虚函数和抽象类</h3><p>在多态中，通常父类中虚函数的实现是毫无意义的，主要是调用子类重写的内容</p>
+<p>因此可以将虚函数改成纯虚函数</p>
+<p>纯虚函数语法：</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">virtual 返回值类型 函数名 （参数列表） = 0；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Base
+{
+public:
+   //纯虚函数
+    //只要有一个纯虚函数, 这个类就称为抽象类
+    //抽象类特点:
+	// 1.无法实例化对象
+    //2.抽象类子类必须重写父类中的纯虚函数 ,否则也属于抽象类
+    virtual void func() = 0;//虚函数基础上写等于0
+    
+}
+
+class Son :public Base
+{
+public:
+     virtual void func() {
+         cout &lt;&lt; "函数调用" &lt;&lt; endl;
+     };
+}
+
+void test01()
+{
+    Base *base = new Son;
+    base-&gt;func();
+ //子类必须重写父类中的纯虚函数  
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="多态案例之制作饮品"><a href="#多态案例之制作饮品" class="headerlink" title="多态案例之制作饮品"></a>多态案例之制作饮品</h3><p>抽象制作饮品基类,提供子类制作咖啡和茶叶</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class AbstractDringking
+{
+public:
+    //煮水
+    virtual void Boil() = 0;
+    //冲泡
+    virtual void Brew() = 0;
+    //倒入杯中
+    virtual void PourInCup() = 0;
+    //加入辅料
+    virtual void PutSomething() = 0;
+    
+}
+
+class Coffee: public AbctractDringking
+{
+public:
+    virtual void Brew()
+    {
+        cout &lt;&lt; "冲泡咖啡" &lt;&lt; endl;
+    }
+    virtual void PourInCup()
+    {
+        cout &lt;&lt; "倒入杯中" &lt;&lt; endl;
+    }
+    virtual void PutSomething()
+    {
+        cout &lt;&lt; "加入糖和牛奶" &lt;&lt; endl;
+    }
+    
+}
+
+//制作函数
+void doWork(AbstractDringking *abs)//AbstractDringking *abs = new Coffee;
+{
+    abs-&gt;makeDrink();
+    delete abs;
+    
+}
+
+void test01()
+{
+    //制作咖啡
+    doWork(new Coffee);
+    
+    cout &lt;&lt; "---" &lt;&lt; endl;
+    //制作茶叶
+    doWowk(new Tea);
+    
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="虚析构和纯虚析构"><a href="#虚析构和纯虚析构" class="headerlink" title="虚析构和纯虚析构"></a>虚析构和纯虚析构</h2><p>子类成员变量在堆中申请地址存放东西, 销毁指针指向的时只有父类被调用析构函数销毁了, 子类没有被调用析构析构函数就直接结束了, 导致内存泄漏</p>
+<p>可以用虚析构解决这个情况 父类指针释放子类时不干净的问题</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Animal
+{
+public:
+    //纯虚函数
+    virtual void speak() = 0;
+    //可以用虚析构解决这个情况 父类指针释放子类时不干净的问题
+ //   virtual ~Animal()
+//    {
+//        cout &lt;&lt;"isjdia" &lt;&lt; endl;
+//    }
+    //虚析构需要代码实现 ,纯虚析构也需要代码实现
+    virtual ~Animal() = 0;
+}
+//有了纯虚析构之后类也属于抽象类无法实现实例化对象
+Animal::~Animal()
+{
+    cout &lt;&lt; "saudh"&lt;&lt; endl;
+    //子类纯虚析构调用完之后父类也要调用一遍纯虚析构 ,防止父类中也有在堆中开辟的内存无法释放
+}
+
+class Cat:public Animal
+{
+public :
+    Cat(string name)
+    {
+        m_Name = new string(name);
+    }
+	virtual void speak()
+    {
+        cout &lt;&lt; *m_name &lt;&lt;"小猫在说话" &lt;&lt; endl;
+    }
+    virtual ~Cat()
+    {
+        if(m_Name != NULL)
+        {
+            cout &lt;&lt; "Cat析构函数调用" &lt;&lt; endl;
+            delete m_Name;
+            m_Name = NULL;
+        }
+    }
+    
+    string *name;
+}
+
+void test01(){
+    Animal *animal = new Cat;
+    animal-&gt;speak();
+    delete animal;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="多态案例之电脑组装"><a href="#多态案例之电脑组装" class="headerlink" title="多态案例之电脑组装"></a>多态案例之电脑组装</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">//抽象出每个零件的类
+class CPU 抽象类
+{
+    virtual void calculate() = 0;
+}
+
+class VideoCard
+{
+    virtual void display() = 0;
+}
+
+class Memory
+{
+    virtual void storage() = 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">电脑类
+class Computer
+{
+    构造函数中传入三个零件指针
+    提供工作函数
+    {
+        调用每个零件工作的接口
+    }
+        
+        
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">具体零件厂商
+Inter厂商
+
+class InterCpu: public CPU
+{
+    void calculate()
+    {
+        cout &lt;&lt; "inter的cpu开始计算了"
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>对象中可以包含其他类的对象吗</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">//抽象不同零件
+class Cpu
+{
+public:
+    virtual void calculate() = 0; 
+};
+
+//抽象显卡类
+class VideoCard
+{
+public:
+    //抽象的显示函数
+    virtual void display() = 0;
+    
+};
+//抽象内存条类
+class Memory
+{
+public:
+    //抽象的存储函数
+    virtual void storage() = 0;    
+};
+//电脑类
+class Computer
+{
+public:
+    Computer(Cpu* cpu, vedioCard *vc, Memory* mem)
+    {
+        m_cpu = cpu;
+        m_vc = vc;
+        m_mem = mem;
+    }
+    //提供工作的函数
+    void work()
+    {
+        //让零件工作起来,调用接口
+        m_cpu-&gt;calculate();
+        m_vc-&gt;display();
+        m_mem-&gt;storage();
+    }
+    
+private:
+    Cpu* m_cpu;//cpu零件指针
+    VideoCard *m_vc;//显卡零件指针
+    Memory *m_mem;//内存条零件指针
+    
+    //
+};
+
+//具体厂商
+//inter厂商
+class InterVideoCard: public: VideoCard
+{
+public:
+    virtual void display()
+    {
+        cout &lt;&lt; "Intel的显卡开始运行" &lt;&lt; endl;
+    }
+}
+
+void test01()
+{
+    CPU *intelCPU = new IntelCPU;
+    //父类指针指向子类
+    VedioCard *InterCard = new InterVideoCard;
+    Memort *intelMem = new IntelMemory;
+    
+    //创建第一台电脑
+    Computer *computer1 = new Computer(intelCpu, intelCard, intelMem);
+    computer1-&gt;work();
+    delete computer1;
+    
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><p>程序运行时产生的数据都属于临时数据 ,程序一旦运行结束都会被释放</p>
+<p>通过文件可以将数据持久化</p>
+<p>c++中对文件操作需要包含头文件<fstream></fstream></p>
+<p>文件类型两种:</p>
+<p>文本文件 -文件以文本的ascii码形式存储在计算机中</p>
+<p>二进制文件 以文本二进制形式存储在计算机中  用户一般不能直接读懂</p>
+<p>操作文件三大类;<br>1.ofstream 写操作<br>2.ifstream 读操作<br>3.读写操作fstream</p>
+<h2 id="5-1-文本文件"><a href="#5-1-文本文件" class="headerlink" title="5.1 文本文件"></a>5.1 文本文件</h2><p>1.包含头文件<br>#include<fstream></fstream></p>
+<p>2.创建流对象<br>ofstream ofs;<br>3.打开文件<br>ofs.open(“文件操作”, 打开方式)<br>4.写数据<br>ofs &lt;&lt; “写入的数据”<br>5.关闭数据<br>ofs.close();</p>
+<p>![](C:\Users\10482\Pictures\Screenshots\屏幕截图 2023-11-15 164848.png)</p>
+<p>文件打开方式可以配合使用,利用|操作符</p>
+<p>例如:用二进制方式写文件 <code>ios::binary | ios::out</code></p>
+<pre class="line-numbers language-none"><code class="language-none">ofs.open("text.text",ios::out);
+文件创建在同名目录下<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="读文件"><a href="#读文件" class="headerlink" title="读文件"></a>读文件</h2><p>读文件步骤:</p>
+<p>1.包含#include<fstream></fstream></p>
+<p>2.创建流对象ifstream ifs;</p>
+<p>3.打开文件并判断是否打开成功<br>ifs.open(“文件路径”, 打开方式)<br>4.读数据<br>四种方式获取<br>5.关闭文件<br>ifs.close();</p>
+<p>第一种:</p>
+<pre class="line-numbers language-none"><code class="language-none">char buf[1024] = {0};
+while(ifs &gt;&gt; buf)
+{
+cout &lt;&lt; buf &lt;&lt; endl;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>第二种</p>
+<pre class="line-numbers language-none"><code class="language-none">char buf[1024] = {0};
+while(ifs.getline(buf, sizeof(buf)))
+{
+cout &lt;&lt; buf &lt;&lt; endl;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>第三种</p>
+<pre class="line-numbers language-none"><code class="language-none">string buf;
+while(getline(ifs, buf))
+{
+cout &lt;&lt; buf &lt;&lt; endl;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>第四种</p>
+<pre class="line-numbers language-none"><code class="language-none">char c;
+while((c=ifs.get())!=EOF)
+{
+cout &lt;&lt; c;
+}//一个一个读没有上面的快<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="写文件"><a href="#写文件" class="headerlink" title="写文件"></a>写文件</h3><pre class="line-numbers language-none"><code class="language-none">ofstream ofs("person.txt", ios::out | ios::binary);//使用构造函数的方法
+打开文件法
+ofs.open("person.txt", ios::out | ios::binary);
+
+写文件
+Person p = {"张三", 18};
+ofs.write((const char *)&amp;p, sizeof(Person));
+
+关闭文件
+ofs.close();
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="读文件-1"><a href="#读文件-1" class="headerlink" title="读文件"></a>读文件</h4><pre class="line-numbers language-none"><code class="language-none">流对象调用成员函数read
+istream&amp; read(char *buffer, int len);
+
+calss Person{
+	char m_Name[64];//姓名
+	int m_Age;//年龄
+}
+//二进制文件 读文件
+void test01()
+{
+	//1.包含头文件
+	//2.创建流对象
+	//3.打开文件  判断文件是否打开成功
+	ifs.open("person.txt", ios::in | ios::binary);
+	
+	if(!ifs.is_open())
+	{
+	cout &lt;&lt; "文件打开失败";
+	return;
+	}
+	4.读文件
+	Person p;
+	ifs.read((char *)&amp;p, sizeof(Person));
+	cout &lt;&lt;p.m_Name &lt;&lt;' ' &lt;&lt; p.mAge;
+
+	//5.关闭文件
+	ifs.close;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="泛型编程"><a href="#泛型编程" class="headerlink" title="泛型编程"></a>泛型编程</h1><h2 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h2><p>模板的概念<br>建立通用的模具，提高复用性</p>
+<pre class="line-numbers language-none"><code class="language-none">template&lt;typename T&gt;
+函数声明和定义
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>template -声明创建模板</p>
+<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
+using namesapce std;
+
+void swapInt(int &amp;a, int &amp;b)
+{
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
+void swapDouble(double &amp;a, double &amp;b)
+{
+	double temp = a;
+	a = b;
+	b = temp;
+}
+
+//函数模板
+template&lt;tempname T&gt;
+void mySwap(T &amp;a, T &amp;b)
+{
+	T temp = a;
+	a = b;
+	b = temp;
+}
+void test01()
+{
+	int a = 10;
+	int b = 20;
+	//两种方式使用函数模板
+	1.自动类型推导
+	mySwap(a, b);
+	2.显示指定类型
+	mySwap&lt;int&gt;(a, b);
+	//提高复用性，类型参数化
+	
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>//函数模板注意事项<br>//1.自动类型推导，必须推导出一致数据类型T才可以使用</p>
+<pre class="line-numbers language-none"><code class="language-none">template&lt;calss T&gt; //typename可以替换成class
+void mySwap(T &amp;a, T &amp;b)
+{
+	T temp = a;
+	a = b;
+	b = temp;
+}
+//1.自动类型推导，必须推导出一致的数据类型T才可以使用
+//2.模板必须确定T的数据类型才可以使用
+temolate&lt;calss T&gt;
+void func()
+{
+
+}
+
+void test02()
+{
+	func&lt;int&gt;();
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="案例-封装排序模板"><a href="#案例-封装排序模板" class="headerlink" title="案例:封装排序模板"></a>案例:封装排序模板</h2><p>从小到大,排序算法为选择排序</p>
+<p>分别利用char数组和int数组进行调试</p>
+<pre class="line-numbers language-none"><code class="language-none">//交换的函数模板
+template&lt;class T&gt;
+void mySwap(T &amp;a, T &amp;b)
+{
+	T temp = a;
+	a = b;
+	b = temp;
+}
+
+template&lt;class T&gt;
+void mySort(T arr[], int len)
+{
+	for(int i=0; i&lt;1; i++)
+	{
+		int max = i;
+		for(int j = i+1; j&lt;len; j++){
+		if(arr[max] &lt; arr[j])
+		{
+		max = j; // 更新最大值下标
+		}
+		}
+		if(max != i) {
+		mySwap(arr[max], arr[i]);
+		}
+	}
+}
+
+//提供打印数组模板
+void printArray(T arr[], int len)
+{
+	for(int i=0; i&lt;len; i++)
+	{
+	cout &lt;&lt; a[i];
+	}
+}
+void test01()
+{
+	//测试char数组
+	char charArr[] = "ahdisua";
+	int num = sizeof(charArr) / sizeof(char);
+	mySort(charArr, num);
+	printArry(charArr, num);
+}
+
+void test02(){
+	int intArr[] = {3, 3,3,45,5,5,6,6};
+	int num = sizeof(intArr)/sizeof(int);
+	mySort(intArr, num);
+	printArray(intArr, num);
+}
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="普通函数和函数模板的区别"><a href="#普通函数和函数模板的区别" class="headerlink" title="普通函数和函数模板的区别"></a>普通函数和函数模板的区别</h2><p>普通函数调用时可以发生自动类型转换(隐式类型转换)</p>
+<p>函数模板调用时,如果利用自动类型推导就不会发生隐式类型转换</p>
+<p>如果利用显示指定类型的方式,可以发生隐式类型转换</p>
+<pre class="line-numbers language-none"><code class="language-none">```
+
+
+
+## 普通函数和函数模板的调用规则
+
+如果函数模板和普通函数都可以实现,优先调用普通函数
+可以通过空模板参数列表来强制调用函数模板
+
+**myPrint&lt;&gt;(a, b)**
+
+函数模板也可以发生重载
+如果函数模板可以产生更好的匹配,优先调用函数模板
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>void myPrint(int a, int b)<br>{<br>    cout &lt;&lt; “调用的普通模板” &lt;&lt; endl;<br>}</p>
+<p>template<class t=""><br>void myPrint(T a, T b)<br>{<br>    cout &lt;&lt; “调用的模板” &lt;&lt; endl;<br>}</class></p>
+<p>template<class t=""><br>void myPrint(T a, T b)<br>{<br>    cout &lt;&lt; “调用的模板” &lt;&lt; endl;<br>}<br>使用两个char传入时, 会优先使用类模板而不是去类型转换</class></p>
+<pre class="line-numbers language-none"><code class="language-none">
+类模板和普通函数重名的情况最好不要出现
+
+### 可以用输出值的方式验证参数匹配
+
+## 对比两个数据是否相等函数
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>//自定义数据类型对比</p>
+<p>template<class t=""><br>bool myCompare(T &amp;a, T &amp;b);</class></p>
+<p>//具体化Person的实现代码,具体化优先调用<br>template&lt;&gt; bool myCompare(Person &amp;p1, Person &amp;p2)<br>{<br>    if(p1.m_Name == p2.m_Name &amp;&amp; p1.m_Age == p2.m_Age)<br>    {<br>    return true;<br>    }<br>    else{<br>    return false;<br>    }<br>}</p>
+<pre class="line-numbers language-none"><code class="language-none">
+# 类模板
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p> template&lt;class NameType, class AgeType = int&gt;<br> class Person<br> {<br> public:<br>     Person(NameType name, AgeType age)<br>     {<br>     this-&gt;m_Name = name;<br>     this-&gt;m_Age = age;<br>     }</p>
+<pre><code> NameType m_Name;
+ AgeType m_Age;
+</code></pre>
+<p> }</p>
+<p> void test01()<br> {<br>     Person&lt;string, int&gt; p(“孙悟空”, 1000);//正确,只能用显示指定类型<br>     p.showPerson();<br> }</p>
+<p> void test02()<br> {<br>     Person<string> p(“猪八戒”, 999);<br> }<br> </string></p><pre class="line-numbers language-none"><code class="language-none">
+## 类模板和函数模板区别
+
+类模板没有自动类型推导的使用方式
+类模板在模板参数列表中可以有默认参数
+
+## 类模板中成员函数创建时机
+
+类模板中成员函数和普通类成员函数创建时机是有区别的
+
+普通类成员函数一开始就可以创建
+类模板中的成员函数在调用时才创建
+
+可以故意写错误代码,看调用报不报错来确定调用机制
+
+![image-20231129133539877](C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129133539877.png)
+
+1.具体参数模板传递
+
+````
+void test01(Person&lt;string, int&gt; &amp;P1);
+````
+
+2.参数模板化传递
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>template&lt;class T1, T2&gt;<br>void printPerson2(Person&lt;T1, T2&gt;&amp;p)<br>{<br>    p.showPerson();<br>    cout &lt;&lt; “T1的类型为: “ &lt;&lt; typid(T1).name() &lt;&lt; endl;<br>    //typid可以调用出类型<br>    cout &lt;&lt; “T2的类型为:” &lt;&lt; typid(T2).name() &lt;&lt; endl;<p></p>
+<p>}</p>
+<pre class="line-numbers language-none"><code class="language-none">
+3.整个类模板化
+
+````
+template&lt;class T&gt;
+void printPerson3(T &amp;p)
+{
+	p.showPerson();
+}
+test03()
+{
+	Person&lt;string, int&gt;p("唐僧", 30);
+}
+````
+
+## 子类继承模板化的父类
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>template<class t=""><br>class Base<br>{<br>    T m;<br>};</class></p>
+<p>//class Son :public Base //错误,必须知道父类中的T才能继承给子类<br>classe Son :public Base<int><br>{</int></p>
+<p>};</p>
+<p>void test01()<br>{<br>    Son s1;<br>}</p>
+<p>//如果灵活指定父类中T类型,子类也需要变类模板<br>但是子类创建对象时要指定父类类型和子类自己的类型<br>template&lt;class T1, class T2&gt;<br>class Son2 :public Base<t2><br>{<br>        T1 boj;<br>};</t2></p>
+<pre class="line-numbers language-none"><code class="language-none">
+## 类模板成员函数类外实现
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>template&lt;class T1, class T2&gt;<br>class Person<br>{<br>public:<br>    Person(T1 name, T2 age);</p>
+<pre><code>void showPerson();
+
+T1 m_Name;
+T2 m_Age;
+</code></pre>
+<p>};</p>
+<p>//构造函数类外实现<br>template&lt;class T1, class T2&gt;<br>Person&lt;T1, T2&gt;::Person(T1 name, T2 age)<br>{<br>    this-&gt;m_Name = name;<br>    this-&gt;m_Age = age<br>}<br>//使用类模板的成员函数时也要加上类模板,哪怕函数实现中用不到<br>template&lt;class T1, class T2&gt;<br>void Person&lt;T1, T2&gt;::showPerson()<br>{<br>    cout &lt;&lt; this-&gt;m_Name &lt;&lt; “年龄: “ &lt;&lt; this-&gt;m_Age &lt;&lt; endl;<br>}</p>
+<p>void test01()<br>{<br>    Person&lt;string, int&gt; P(“Tom”, 20);<br>    P.showPerson();<br>}<br>int main()<br>{</p>
+<p>}</p>
+<pre class="line-numbers language-none"><code class="language-none">
+## 类模板分文件编写问题以及解决
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>class Person<br>{<br>public:<br>    Person(T1 name, T2 age);<br>    void showPerson();<br>    T1 m_Name;<br>    T2 m_Age;<br>};</p>
+<p>template&lt;class T1, class T2&gt;<br>Person&lt;T1, T2&gt;::Person(T1 name, T2 age)<br>{</p>
+<p>}</p>
+<pre class="line-numbers language-none"><code class="language-none">
+类模板中成员函数在链接阶段未创建,创建时机在调用阶段
+
+第一种解决方法:直接包含源文件
+
+第二种解决方案:将.h和.cpp中的内容写到一起, 将后缀名改为.hpp
+
+直接`include"person.hpp"
+
+## 类模板与友元
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>template&lt;class T1, class T2&gt;<br>class Person<br>{<br>public:<br>    Person(T1 name, T2 age)<br>    {<br>    this-&gt;m_Name = name;<br>    this-&gt;m_Age = age;<br>    }</p>
+<p>private:<br>    T1 m_Name;<br>    T2 m_Age;<br>}</p>
+<pre><code>
+模板配合友元函数的类内和类外实现
+
+全局函数类内实现-直接在类内声明友元即可
+
+全局函数类外实现-需要提前让编译器知道全局函数的存在
+
+![image-20231129231229528](C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129231229528.png)
+
+![image-20231129231245441](C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129231245441.png)
+</code></pre>
 
                 
             </div>
@@ -1487,7 +2167,7 @@ public:
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2023</span>
+                <span id="year">2023-2024</span>
             
             <a href="/about" target="_blank">Satan Pig</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -1498,7 +2178,7 @@ public:
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">25.3k</span>
+                        class="white-color">72.6k</span>
             
             
             

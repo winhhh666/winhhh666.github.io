@@ -501,21 +501,21 @@ a.size();返回">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-10-19
+                    2023-10-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    347
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    6 分
                 </div>
                 
 
@@ -549,7 +549,8 @@ a.clear();//把vector清空
 //所有的stl容器都支持这两个函数,用法相同,函数也相同
 vector&lt;int&gt;  b[233];//相当于第一维长233,第二维长度动态变化的int数组
 struct rec{...}
-vector&lt;rec&gt; c;自定义的结构体类型也可以保存在vector中<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+vector&lt;rec&gt; c;自定义的结构体类型也可以保存在vector中
+a.resize(大小);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h1 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h1><p>可以当成指针来看</p>
 <pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">vector&lt;int&gt;::iterator it = a.begin();
@@ -567,15 +568,160 @@ it+1;//即为a[1]的指针
 for(int i=0; i&lt;a.size(); i++) cout &lt;&lt; a[i] &lt;&lt;' ';
 等价于
     auto i = a.begin();
+//迭代器 其实绝大多数情况下不用太麻烦
 for(vector&lt;int&gt;::iterator/*auto*/ i = a.begin(); i!=a.end(); i++)
     cout &lt;&lt; *i &lt;&lt;' ';
 也有范围遍历
-for(int x : a) cout &lt;&lt; x &lt;&lt;' ';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+for(int x : a) cout &lt;&lt; x &lt;&lt;' ';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>等价头元素返回</p>
 <p>a.front()     a[0]    *a.begin()</p>
-<p>a.back() 最后一个元素</p>
+<p>a.back() 最后一个元素等价于a[a.size()-1];</p>
 <p>a.end() 最后一个元素后一个位置</p>
+<p>a.push_back(4);//在数组最后加一个元素 平均意义上看是O(1)操作 比普通数组慢一倍</p>
+<p>a.pop_back(); </p>
+<p>a.erase()//这是O(n)的操作,没啥用</p>
+<p>a.size();</p>
+<p>for(auto x : a) cout &lt;&lt; x &lt;&lt;’  ‘;</p>
+<p>vector是一个倍增思想的数组</p>
+<h1 id="include队列"><a href="#include队列" class="headerlink" title="#include队列"></a>#include<queue>队列</queue></h1><p>普通队列和优先队列</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">queue&lt;int&gt; a;
+queue&lt;double&gt; q;
+priority_queue&lt;int&gt; a; // 大根堆
+priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt; &gt; b;//小根堆
+struct Rec
+{
+    int a, b;
+    //如果用自己的结构体,一定要重载比较符号(以大根堆为例)  优先队列重载小于号
+    bool operator&lt; (const Rec&amp; t) const
+    {
+        return a&lt;t.a;//用a来比较
+    }
+    
+};
+struct SRec{
+  int a, b;
+    bool operator&gt; (const SRec&amp; t) const
+    {
+        return a&lt;t.a;
+    }
+};
+priority_queue&lt;Rec&gt; d;
+priority_queue&lt;SRec, vector&lt;SRec&gt;, greater&lt;SRec&gt; &gt; s;
+d.push({1 ,2});
+
+库函数
+queue&lt;int&gt; q;
+q.push(1);//在队尾插入一个元素
+q.pop();//弹出队头元素
+q.front(); //返回队头
+q.back(); //返回队尾
+//没有clear()函数如何清空队列?
+q = queue&lt;int&gt;();
+
+s.push(1);
+s.top();查询堆顶元素
+s.pop();删除堆顶元素<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="除了栈-队列-优先队列-其他的都有clear函数"><a href="#除了栈-队列-优先队列-其他的都有clear函数" class="headerlink" title="除了栈,队列,优先队列,其他的都有clear函数"></a>除了栈,队列,优先队列,其他的都有clear函数</h1><p>优先队列(优先弹出最大值)</p>
+<h1 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h1><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;stack&gt;
+栈尾插入,栈尾弹出
+	stack&lt;int&gt; stk;
+	stk.push(1);
+	stk.top();
+	stk.pop();
+	<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="双端队列"><a href="#双端队列" class="headerlink" title="双端队列"></a>双端队列</h1><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;deque&gt;
+//常数大,比vector还大
+deque&lt;int&gt; a;
+a.begin();
+a.end();
+a.front(), a.back();//这两是迭代器啊,踏马的忘了
+a.push_back(1), push_front(2);
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>queue底层实现是vector(也可以用链表,不过效率低)</p>
+<h1 id="include-1"><a href="#include-1" class="headerlink" title="#include"></a>#include<set></set></h1><p>包含set和multiset两个容器</p>
+<p>分别是有序集合和有序多重集合</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">set&lt;int&gt; a;//元素不能重复
+multiset&lt;int&gt; b;
+//若以结构体传参则要重载小于号
+struct Rec
+{
+    int x, y;
+    bool operator&lt; (const Rec&amp; t) const{
+        return x&lt; t.x;
+    }
+};
+size / empty / clear
+set&lt;int&gt;::iterator it = a.begin();
+it++, it--;
+++it, --it;
+迭代器:
+a.end();
+a.insert(x);将x插入到集合x中,复杂度为logn
+在set中若已存在该元素,则对集合的状态无影响
+a.find(x);在集合中查找等于x的元素,并返回指向该元素的迭代器,若不存在则返回s.end(),时间复杂度为O(logn);
+if(a.find(x) == a.end()) 判断x是否在a中
+
+s.lower_bound(x)//找到大于等于x的最小的迭代器
+  s.upper_bound(x)//找到大于x的最小的迭代器
+   a.erase(it);//logn
+   a.erase(x);//从 s中删除所有等于xlogn;复杂度为k+logn 其中k为元素x的个数
+a.count(x);//返回个数 没有返回0,时间复杂度k+logn
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>迭代器</p>
+<p>​	set 和multiset的迭代器称为双向访问迭代器 ,不支持随机访问, 支持*解除引用,仅支持++和–两个与算数相关的操作</p>
+<h1 id="map和set的底层实现都是红黑树"><a href="#map和set的底层实现都是红黑树" class="headerlink" title="map和set的底层实现都是红黑树"></a>map和set的底层实现都是红黑树</h1><h1 id="include-2"><a href="#include-2" class="headerlink" title="#include"></a>#include<map></map></h1><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">map&lt;int, int&gt; a;
+a[1] = 2;
+a[1000000] = 3;
+cout &lt;&lt; a[1000000];
+
+map&lt;string, vector&lt;int&gt; &gt; a;
+a["whh"] = vector&lt;int&gt;({1, 2 ,3});
+cout &lt;&lt; a["whh"][2] &lt;&lt; endl;
+
+
+return 0;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>size/empty/clear/begin/end 均与set类似</p>
+<p>insert/erase</p>
+<p>与set类似,但是参数均是pair&lt;key_type, value_type&gt;</p>
+<p>a.insert({“a”, {}});</p>
+<p>a[“whh”] = vector<int>({1, 2 ,3 ,4});</int></p>
+<p>cout &lt;&lt; a[“whh”][2] &lt;&lt; endl;k</p>
+<p>pair&lt;int, int&gt;</p>
+<p>find:</p>
+<p>​	a.find(x);//在变量名为a的map中查找key为x的二元组 ,返回的是迭代器</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;unordered_map&gt;
+#include&lt;unordered_set&gt;
+
+unordered_set&lt;int&gt; a; // 底层实现是哈希表
+unordered_multiset&lt;int&gt; b;// 哈希,可存在重复元素
+
+
+unordered_map&lt;int, int&gt; c;//O(1)
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="include-3"><a href="#include-3" class="headerlink" title="#include"></a>#include<bitset></bitset></h1><p>bitset&lt;1000&gt; a, b;</p>
+<p>a[0] = 1;</p>
+<p>a[1] = 1;</p>
+<p>a.set(3);//a[3] = 1;</p>
+<p>a.reset(3); //a[3] = 0;</p>
+<p>同样的有size/empty/</p>
+<h1 id="pair-a-b"><a href="#pair-a-b" class="headerlink" title="pair<int, string> a,b;"></a>pair&lt;int, string&gt; a,b;</h1><p>a = {3, “hhh”};</p>
+<p>b = make_pair(4, “abc”);</p>
+<p>cout &lt;&lt; a.first &lt;&lt; ‘ ‘ &lt;&lt; a.second;</p>
+<p>支持比较运算(双关键字比较, 先比较第一个再去看第二个 ,如果是字符串按字典序来比较)</p>
+<p>AND 与</p>
+<p>OR 或</p>
+<p>XOR 异或</p>
 
                 
             </div>
@@ -1049,7 +1195,7 @@ for(int x : a) cout &lt;&lt; x &lt;&lt;' ';<span aria-hidden="true" class="line-
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2023</span>
+                <span id="year">2023-2024</span>
             
             <a href="/about" target="_blank">Satan Pig</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -1060,7 +1206,7 @@ for(int x : a) cout &lt;&lt; x &lt;&lt;' ';<span aria-hidden="true" class="line-
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">25.3k</span>
+                        class="white-color">72.6k</span>
             
             
             

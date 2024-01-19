@@ -1,0 +1,2231 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="大前端学习, SatanPig的个人博客">
+    <meta name="description" content="计算机常识IP4个字节= 32bit 即42亿多
+分成四段 每段用十进制来表示
+局域网在一个真实ip下面组建一个局域网
+公网ip  子网ip 
+确定在同一个局域网方法: 子网掩码
+将ip地址与子网掩码按位与运算就可以进行验证了
+如何测试与其">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>大前端学习 | SatanPig的个人博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="SatanPig的个人博客" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">SatanPig的个人博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/music">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Music</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Movies</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Books</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Galleries</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">SatanPig的个人博客</div>
+        <div class="logo-desc">
+            
+            一个计算机学生用来分享所学所得的网站
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/music " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Music</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/movies " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Movies</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/books " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Books</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/galleries " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Galleries</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/winhhh666" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>去SatanPig的github主页看看
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/winhhh666" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="去SatanPig的github主页看看" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">大前端学习</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-12-23
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-12-30
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    7.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    32 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="计算机常识"><a href="#计算机常识" class="headerlink" title="计算机常识"></a>计算机常识</h1><h2 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h2><p>4个字节= 32bit 即42亿多</p>
+<p>分成四段 每段用十进制来表示</p>
+<h3 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h3><p>在一个真实ip下面组建一个局域网</p>
+<p>公网ip  子网ip </p>
+<p>确定在同一个局域网方法: 子网掩码</p>
+<p>将ip地址与子网掩码按位与运算就可以进行验证了</p>
+<p>如何测试与其他人网络是否互通?</p>
+<p>使用ping 然后对方的ip地址</p>
+<p>能正常连通的话说明两台电脑网络是连的</p>
+<p>如果超时则不连通的</p>
+<h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2><p>通过互联网提供服务的</p>
+<p>公网ip</p>
+<p>云服务器</p>
+<p>商业服务器可以装多个cpu</p>
+<p>为啥要输入http://   ?</p>
+<p>浏览器和服务器通信的基本协议</p>
+<p>全称:超文本传输协议</p>
+<p>服务器上安装tomcat apache nginx</p>
+<p>安装软件做好配置启动它就可以把网页提供给别人使用了</p>
+<p>http是在TCP/IP的基础上而来的</p>
+<p>https 加密的http安全协议</p>
+<p>ftp文件传输协议</p>
+<p>smtp电子邮件传输协议</p>
+<p>dhcp动态主机配置协议</p>
+<h2 id="DNS解析服务"><a href="#DNS解析服务" class="headerlink" title="DNS解析服务"></a>DNS解析服务</h2><p>域名解析服务</p>
+<p>计算机如何知道百度的ip呢?</p>
+<p>C:\Windows\System32\drivers\etc</p>
+<p>在hosts配置文件里面</p>
+<p>域名在这里映射到ip</p>
+<p>当计算机在这里找不到映射时就会请求DNS服务器(通常由网络运营商提供,通常能找到全球的域名和ip)</p>
+<p>qq程序内置ip地址,所以不受DNS服务器影响</p>
+<p>一旦运营商DNS服务器出现问题就访问不了网络了</p>
+<p>可以手动切换DNS地址</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224001742414.png" alt="image-20231224001742414"></p>
+<h3 id="DNS劫持"><a href="#DNS劫持" class="headerlink" title="DNS劫持:"></a>DNS劫持:</h3><p>host配置被更改了 域名访问到坏人的IP上去了,这时候登录账号密码账号就会被人盗走了</p>
+<h2 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h2><p>顶级域名 .com .cn .net</p>
+<p>2.3级域名</p>
+<p>注册完域名就可以管理后台进行配置将域名指向ip</p>
+<p>一个完整的域名地址包括网络协议 三级域名 二级域名 顶级域名和端口号</p>
+<p>三级域名最常见www</p>
+<p>world wide web 万维网联盟</p>
+<p>通常把带www和不带的都指向同一个ip</p>
+<h3 id="端口"><a href="#端口" class="headerlink" title="端口:"></a>端口:</h3><p>用来分辨发送过来的数据</p>
+<p>需要多个端口才能确保多个程序同时通信</p>
+<p>计算机端口一共有6万多个</p>
+<p>4000及以下的不要使用 很多系统程序会占用</p>
+<p>为啥平时上网不用写端口号呢?</p>
+<p>http上网默认协议就是80</p>
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p>command line 命令行</p>
+<p>又叫DOS窗口 ,DOS也是一个操作系统</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224003051598.png" alt="image-20231224003051598"></p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224003128058.png" alt="image-20231224003128058"></p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224003219440.png" alt="image-20231224003219440"></p>
+<p>命令行先在当前文件夹中寻找文件,然后去path中的路径寻找文件</p>
+<p>环境变量分两种</p>
+<h3 id="系统变量"><a href="#系统变量" class="headerlink" title="系统变量:"></a>系统变量:</h3><p>系统内置好的一些程序路径, 这些内容是所有登录用户共享的</p>
+<h3 id="用户变量"><a href="#用户变量" class="headerlink" title="用户变量"></a>用户变量</h3><h2 id="字符乱码"><a href="#字符乱码" class="headerlink" title="字符乱码"></a>字符乱码</h2><p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224003741292.png" alt="image-20231224003741292"></p>
+<p>unicode全球统一字符集编码</p>
+<p>notepad++可以切换字符集 </p>
+<h2 id="linux系统"><a href="#linux系统" class="headerlink" title="linux系统"></a>linux系统</h2><p>linux是操作系统的内核</p>
+<p>git分布式代码管理软件</p>
+<h2 id="计算机英语"><a href="#计算机英语" class="headerlink" title="计算机英语"></a>计算机英语</h2><p>优先读原版</p>
+<p>back up备份</p>
+<p>bin  binary二进制</p>
+<p>admin</p>
+<p>setup程序安装包</p>
+<h2 id="什么是多线程和多进程"><a href="#什么是多线程和多进程" class="headerlink" title="什么是多线程和多进程"></a>什么是多线程和多进程</h2><p>多进程</p>
+<p>windows系统中有很多个程序都开着, 通过轮循切换来实现的每个程序间切换的非常快,用户感受不到, 其实没有实际提升运行效率</p>
+<h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3><p>多个cpu可以开出多个线程</p>
+<p>浏览器同时干多个事情</p>
+<p>同一个进程里面同时发生的多个动作:喝水 - 很多个人同时喝一瓶水</p>
+<p>程序一个一个执行的叫做同步</p>
+<p>程序多个分支同时执行的叫做异步</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224010509364.png" alt="image-20231224010509364"></p>
+<p>右键 检查 console</p>
+<h2 id="CMD命令"><a href="#CMD命令" class="headerlink" title="CMD命令"></a>CMD命令</h2><p>内部命令</p>
+<p>外部命令</p>
+<h3 id="切换盘符"><a href="#切换盘符" class="headerlink" title="切换盘符"></a>切换盘符</h3><p>输入d: 就可以切换到d盘了</p>
+<h3 id="返回到上一目录"><a href="#返回到上一目录" class="headerlink" title="返回到上一目录"></a>返回到上一目录</h3><p>cd..</p>
+<h3 id="直接返回到根目录"><a href="#直接返回到根目录" class="headerlink" title="直接返回到根目录"></a>直接返回到根目录</h3><p>cd\</p>
+<h3 id="进入当前文件夹某个文件"><a href="#进入当前文件夹某个文件" class="headerlink" title="进入当前文件夹某个文件"></a>进入当前文件夹某个文件</h3><p>cd 文件名</p>
+<h3 id="查看当前文件夹所有文件"><a href="#查看当前文件夹所有文件" class="headerlink" title="查看当前文件夹所有文件"></a>查看当前文件夹所有文件</h3><p>dir</p>
+<p>查看当前文件夹所有可执行程序</p>
+<p>输入dir *.exe *可为任意内容</p>
+<h3 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h3><p>md c:\abc</p>
+<h3 id="删除文件夹"><a href="#删除文件夹" class="headerlink" title="删除文件夹"></a>删除文件夹</h3><p>del <em>.</em></p>
+<h3 id="删除目录"><a href="#删除目录" class="headerlink" title="删除目录"></a>删除目录</h3><p>rd 目录名字</p>
+<h3 id="查看所有命令及其作用"><a href="#查看所有命令及其作用" class="headerlink" title="查看所有命令及其作用"></a>查看所有命令及其作用</h3><p>help</p>
+<p>help+命令 可以看到某个命令的详细说明</p>
+<p>输入网址 ,向服务器发送请求,服务器返回文件</p>
+<p>html内容</p>
+<p>css布局和样式</p>
+<p>js交互效果</p>
+<p>图片压缩格式</p>
+<p>图片文件格式</p>
+<p>gif ()</p>
+<p>![](C:\Users\10482\Pictures\Screenshots\屏幕截图 2023-11-28 235004.png)</p>
+<p>无损压缩8-256色</p>
+<p>  jpg   jpeg</p>
+<p>支持最高级别压缩</p>
+<p>支持上百万种颜色</p>
+<p>有损压缩</p>
+<p>png </p>
+<p>![](C:\Users\10482\Pictures\Screenshots\屏幕截图 2023-11-28 235205.png)</p>
+<p>压缩到极限利于网络传输却不失真</p>
+<p>bmp</p>
+<p>网站中验证码,通常不压缩</p>
+<p>  webg</p>
+<p>![](C:\Users\10482\Pictures\Screenshots\屏幕截图 2023-11-28 235513.png)</p>
+<p>有损压缩牺牲饱和度和色相   减少图像在内存和磁盘中占用的空间,不会发现对图像的外观产生很大不利影响</p>
+<p>无损压缩压缩率低</p>
+<h2 id="hypertext"><a href="#hypertext" class="headerlink" title="hypertext"></a>hypertext</h2><h3 id="超链接之页面跳转"><a href="#超链接之页面跳转" class="headerlink" title="超链接之页面跳转"></a>超链接之页面跳转</h3><p><code>&lt;a href="目标页面地址" target=""&gt; &lt;/a&gt;</code></p>
+<p>_self代表当前页面打开</p>
+<p>_blank在空白页面打开</p>
+<p>anchor  hypertext </p>
+<p>需要加上在网址前加上http://否则不能实现跳转</p>
+<h3 id="超链接之锚点"><a href="#超链接之锚点" class="headerlink" title="超链接之锚点"></a>超链接之锚点</h3><pre class="line-numbers language-none"><code class="language-none">&lt;a href="#box" id="box1"&gt; 目标一&lt;/a&gt;
+&lt;p id = "box"&gt;
+&lt;a href="#box1"&gt;回到顶部&lt;/a&gt;
+&lt;/p&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="文本修饰之常用标签"><a href="#文本修饰之常用标签" class="headerlink" title="文本修饰之常用标签"></a>文本修饰之常用标签</h2><p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129001119285.png" alt="image-20231129001119285"></p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129001844432.png" alt="image-20231129001844432"></p>
+<p>strong盲人使用时会重读,b标签则没有</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129001228551.png" alt="image-20231129001228551"></p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129001252395.png" alt="image-20231129001252395"></p>
+<p>em优先曝光</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129001346192.png" alt="image-20231129001346192"></p>
+<p>html5已经不支持s标签,建议使用del</p>
+<h3 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h3><pre class="line-numbers language-none"><code class="language-none">underline
+&lt;u&gt;&lt;/u&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="角标"><a href="#角标" class="headerlink" title="角标"></a>角标</h3><pre class="line-numbers language-none"><code class="language-none">上角标
+&lt;sup&gt;&lt;/sup&gt;
+&lt;sub&gt;&lt;/sub&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129003021442.png" alt="image-20231129003021442"></p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129003054071.png" alt="image-20231129003054071"></p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231129003158565.png" alt="image-20231129003158565"></p>
+<h3 id="标签"><a href="#标签" class="headerlink" title="标签:"></a>标签:</h3><p>单标签, 双标签</p>
+<h3 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h3><p>放在标签里面, 属性名=属性值 不同属性间要用空格分开</p>
+<h3 id="鼠标悬停显示文字"><a href="#鼠标悬停显示文字" class="headerlink" title="鼠标悬停显示文字"></a>鼠标悬停显示文字</h3><p>利用标签的title属性</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;div title="我是鼠标悬停展示的内容"&gt;文字内容&lt;/div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h2><pre class="line-numbers language-none"><code class="language-none">&lt;img src = "文件名"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="标准的HTML"><a href="#标准的HTML" class="headerlink" title="标准的HTML"></a>标准的HTML</h2><pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE heml&gt;//告诉浏览器后面书写的是HTML5规范的语法
+&lt;html&gt;
+    &lt;head&gt;	
+		&lt;meta charset="UTF-8"&gt;//设置字符集
+		&lt;title&gt;HTML基本格式&lt;/title&gt;
+    &lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;学习测试&lt;/h1&gt;
+	&lt;/body&gt;
+&lt;/html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="网页标题"><a href="#网页标题" class="headerlink" title="网页标题<title>"></a>网页标题<code>&lt;title&gt;</code></h2><p>如何实现网页悬浮小标签上的文字?(同时也是收藏时候默认显示的文字)?</p>
+<p>双标签</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;title&gt;网页标题&lt;/title&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>只有h1到h6六个标签使用</p>
+<h3 id="标题居中"><a href="#标题居中" class="headerlink" title="标题居中"></a>标题居中</h3><pre class="line-numbers language-none"><code class="language-none">&lt;h1 align="center"&gt; &lt;/h1&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><pre class="line-numbers language-none"><code class="language-none">&lt;p&gt;&lt;/p&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>段落加空格</p>
+<p>直接按空格键多个空格也只显示一个空格</p>
+<p>使用<code>&amp;nbsp;</code></p>
+<h2 id="使用标题和段落标签实现一个简单的网页"><a href="#使用标题和段落标签实现一个简单的网页" class="headerlink" title="使用标题和段落标签实现一个简单的网页"></a>使用标题和段落标签实现一个简单的网页</h2><pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 align = "center"&gt;学习测试&lt;/h1&gt;
+    &lt;h4 align = "center"&gt;学习测试&lt;/h4&gt;
+    &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;学习测试&lt;/p&gt;
+    &lt;h3&gt;&amp;nbsp;学习测试&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="图片和标签初探"><a href="#图片和标签初探" class="headerlink" title="图片和标签初探"></a>图片和标签初探</h2><pre class="line-numbers language-none"><code class="language-none">&lt;img src=""&gt; 单标签<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="三种引入图片路径情况"><a href="#三种引入图片路径情况" class="headerlink" title="三种引入图片路径情况"></a>三种引入图片路径情况</h3><h4 id="1-图片文件与html同文件夹下"><a href="#1-图片文件与html同文件夹下" class="headerlink" title="1.图片文件与html同文件夹下"></a>1.图片文件与html同文件夹下</h4><pre class="line-numbers language-none"><code class="language-none">&lt;img src="test.jpg"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="2-pic在与html同文件夹内的文件夹里"><a href="#2-pic在与html同文件夹内的文件夹里" class="headerlink" title="2.pic在与html同文件夹内的文件夹里"></a>2.pic在与html同文件夹内的文件夹里</h4><pre class="line-numbers language-none"><code class="language-none">&lt;img src="img/pic2.png"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="3-pic所在文件夹与html所在文件夹是同级关系"><a href="#3-pic所在文件夹与html所在文件夹是同级关系" class="headerlink" title="3.pic所在文件夹与html所在文件夹是同级关系"></a>3.pic所在文件夹与html所在文件夹是同级关系</h4><p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224140517192.png" alt="image-20231224140517192"></p>
+<h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><h4 id="1-引用互联网资源"><a href="#1-引用互联网资源" class="headerlink" title="1.引用互联网资源"></a>1.引用互联网资源</h4><pre class="line-numbers language-none"><code class="language-none">&lt;img src="图片所在的互联网地址"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="2-引用本地文件夹里的图片"><a href="#2-引用本地文件夹里的图片" class="headerlink" title="2.引用本地文件夹里的图片"></a>2.引用本地文件夹里的图片</h4><pre class="line-numbers language-none"><code class="language-none">&lt;img src="C:\qianfeng.png"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="图片标签进阶"><a href="#图片标签进阶" class="headerlink" title="图片标签进阶"></a>图片标签进阶</h2><p>有的图片由于某种原因无法显示(服务器响应过慢, 视力障碍阅读), 可以用文本来提示读者</p>
+<p>如何操作?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;img src="路径" alt="替换文字"&gt;//alt显示会占用页面空间<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>鼠标悬停在图片上,如何显示悬停文本?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;img src="" alt="" title=""&gt; //title显示不占用页面空间, 只有鼠标划入时才会显示<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>标签名和属性名并不冲突</p>
+<h2 id="图片标签拓展"><a href="#图片标签拓展" class="headerlink" title="图片标签拓展"></a>图片标签拓展</h2><pre class="line-numbers language-none"><code class="language-none">图片 格式bmp , jpg, jpeg, png, tif, gif, svg, psd, wmf, webp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>最重要区别:图片存储时是否进行压缩 有损压缩还是无损压缩</p>
+<pre class="line-numbers language-none"><code class="language-none">gif jpg jpeg
+png bmp webp<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>有损压缩(保留亮度信息 将色相和饱和度的信息和周围像素进行合并)     </p>
+<p>无损压缩 对文件本身压缩 不能减少图像在内存和磁盘中占用的空间压缩率也低</p>
+<h3 id="gif支持透明-压缩-交错-多图像"><a href="#gif支持透明-压缩-交错-多图像" class="headerlink" title="gif支持透明 压缩 交错  多图像"></a>gif支持透明 压缩 交错  多图像</h3><h3 id="jpg-jpeg-有损压缩"><a href="#jpg-jpeg-有损压缩" class="headerlink" title="jpg/jpeg 有损压缩"></a>jpg/jpeg 有损压缩</h3><h3 id="png-兼具gif和jpg的格式"><a href="#png-兼具gif和jpg的格式" class="headerlink" title="png 兼具gif和jpg的格式"></a>png 兼具gif和jpg的格式</h3><h3 id="bmp-验证码常用"><a href="#bmp-验证码常用" class="headerlink" title="bmp 验证码常用"></a>bmp 验证码常用</h3><h3 id="webp有两种压缩格式-无损和有损-专为google研发"><a href="#webp有两种压缩格式-无损和有损-专为google研发" class="headerlink" title="webp有两种压缩格式 无损和有损  专为google研发"></a>webp有两种压缩格式 无损和有损  专为google研发</h3><h2 id="超链接之页面跳转-1"><a href="#超链接之页面跳转-1" class="headerlink" title="超链接之页面跳转"></a>超链接之页面跳转</h2><p>HyperText</p>
+<p>超文本</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;a href="页面地址"&gt; &lt;/a&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>anchor  HyperText reference</p>
+<h4 id="如果页面地址是一个网址-可以直接打开吗"><a href="#如果页面地址是一个网址-可以直接打开吗" class="headerlink" title="如果页面地址是一个网址,可以直接打开吗?"></a>如果页面地址是一个网址,可以直接打开吗?</h4><p> 需要加上http://</p>
+<h4 id="页面跳转有哪两种方式-如何实现"><a href="#页面跳转有哪两种方式-如何实现" class="headerlink" title="页面跳转有哪两种方式?如何实现?"></a>页面跳转有哪两种方式?如何实现?</h4><p>1.在当前页面打开<code>&lt;a href="http://www.baidu.com/" target="_self"&gt;</code></p>
+<p>2.在新页面打开<code>&lt;a href="http://www.baidu.com/" target="_blank"&gt;</code></p>
+<h2 id="超链接之锚点id"><a href="#超链接之锚点id" class="headerlink" title="超链接之锚点id"></a>超链接之锚点id</h2><p>锚点又叫什么?</p>
+<p>命名标记id</p>
+<h3 id="如何实现页面内不同区域的跳转"><a href="#如何实现页面内不同区域的跳转" class="headerlink" title="如何实现页面内不同区域的跳转?"></a>如何实现页面内不同区域的跳转?</h3><p>锚点</p>
+<p>可以实现目录等功能</p>
+<p>具体实现</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;a href="#box1"&gt;目标一&lt;/a&gt;
+&lt;a href="#box2"&gt;目标二&lt;/a&gt;
+&lt;p id="box1"&gt; 1&lt;/p&gt;
+&lt;p id="box2"&gt; 2&lt;/p&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 align = "center"&gt;学习测试&lt;/h1&gt;
+    &lt;h4 align = "center"&gt;
+        &lt;a href="#b1"&gt;第一&lt;/a&gt;
+        &lt;a href="#b2"&gt;第二&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;p align = "center" id = "b1"&gt;
+        &lt;img src="test.jpg" alt="测试"&gt;
+    &lt;/p&gt;
+    &lt;p align = "center" id = "b2"&gt;
+        &lt;img src="test.jpg" alt=""&gt;
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="文本修饰之常用标签-1"><a href="#文本修饰之常用标签-1" class="headerlink" title="文本修饰之常用标签"></a>文本修饰之常用标签</h2><h3 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h3><p>bold    strong</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;b&gt;b&lt;/b&gt;//仅仅为了加粗显示文本
+&lt;strong&gt;s&lt;/strong&gt;//strong标签语义化更强, 表示该文本比较重要, 同时视障阅读这个有重读, 上面那个则没有<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="倾斜"><a href="#倾斜" class="headerlink" title="倾斜"></a>倾斜</h3><pre class="line-numbers language-none"><code class="language-none">&lt;i&gt; &lt;/i&gt; //italic字体倾斜 无强调语气
+&lt;em&gt; &lt;em&gt; //emphasize字体倾斜 有加强语气 百度等搜索引擎的爬虫可以收录这个东西<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>如何实现字体上的删除线效果?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;s&gt;s&lt;/s&gt;strike //html5已经不支持s标签
+&lt;del&gt;s&lt;/d&gt;//delete<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="文本修饰之其他标签"><a href="#文本修饰之其他标签" class="headerlink" title="文本修饰之其他标签"></a>文本修饰之其他标签</h2><h3 id="下划线-1"><a href="#下划线-1" class="headerlink" title="下划线"></a>下划线</h3><pre class="line-numbers language-none"><code class="language-none">&lt;u&gt; &lt;/u&gt; //underline<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="特殊角标"><a href="#特殊角标" class="headerlink" title="特殊角标"></a>特殊角标</h3><p>如何实现一个化学式?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;sup&gt; &lt;/sup&gt; superscript上角标
+&lt;sub&gt; &lt;/sub&gt; subscript下角标<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h3><p>要整个标签嵌套 万万不可交叉嵌套</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224191006169.png" alt="image-20231224191006169"></p>
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><p>orderlist</p>
+<p>ol<br>    li<br>    li</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;ol&gt;
+	&lt;li&gt;列表&lt;/li&gt;
+&lt;/ol&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>ol中只能嵌套li, 其他的标签要放在li里面 </p>
+<p>有序列表中项目符号是可以设置的</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;ol type="__"&gt;&lt;/ol&gt; //A a I i 1 英文 罗马 阿拉伯<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>能否更改起始序号?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;ol start="1"&gt; &lt;/ol&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><pre class="line-numbers language-none"><code class="language-none">&lt;ul&gt; 
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>unorder list</p>
+<p>项目符号 默认三个实心原点</p>
+<h3 id="vsc中交换两个行操作"><a href="#vsc中交换两个行操作" class="headerlink" title="vsc中交换两个行操作"></a>vsc中交换两个行操作</h3><p>alt + 上或下</p>
+<p>如何改变项目符号?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;ul type = ""&gt;//disc 黑点 circle空心圆 none隐藏 square黑方
+
+&lt;/ul&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224194721483.png" alt="image-20231224194721483"></p>
+<p>type属性默认disc</p>
+<h2 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h2><pre class="line-numbers language-none"><code class="language-none">&lt;dl&gt; definition list定义列表
+&lt;dt&gt; difinition term定义标题
+&lt;dd&gt; definition description定义描述<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">&lt;dl&gt;
+	&lt;dt&gt; &lt;/dt&gt;//dt与dd两个互相不能嵌套 因为是同级别的
+	&lt;dd&gt; &lt;/dd&gt;
+&lt;/dl&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>dd dt不能脱离dl单独使用</p>
+<p>在浏览器中dd会默认相对dt缩进</p>
+<p>如何实现不缩进的呢?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;dl&gt;
+	&lt;dt&gt; &lt;/dt&gt;
+	
+	&lt;dd&gt; &lt;/dd&gt;
+&lt;/dl&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="快速创建标签小技巧"><a href="#快速创建标签小技巧" class="headerlink" title="快速创建标签小技巧"></a>快速创建标签小技巧</h2><p>快速创建h1</p>
+<p>Emmet语法</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224200441995.png" alt="image-20231224200441995"></p>
+<pre class="line-numbers language-none"><code class="language-none">标签名{内容}+tab补全<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231224200709599.png" alt="image-20231224200709599"></p>
+<pre class="line-numbers language-none"><code class="language-none">标签名{标签文本内容}*标签重复次数 然后tab<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p> 嵌套标签</p>
+<pre class="line-numbers language-none"><code class="language-none">父标签名 &gt; 子标签名{内容}*重复次数 tab<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">ul&gt;li{文本}*5//一个ul里面放了五个li
+ul*5&gt;li{文本}//创建五个ul 每个ul里面都有1个li<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="列表综合案例"><a href="#列表综合案例" class="headerlink" title="列表综合案例"></a>列表综合案例</h2><pre class="line-numbers language-none"><code class="language-none">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;列表案例&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 align = "center"&gt;测试&lt;/h1&gt;
+    &lt;p&gt;
+        &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;测试段落
+    &lt;/p&gt;
+        
+    &lt;p&gt;
+        &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;测试段落
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;img src="test.jpg" alt="testa" title="title"&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;h2&gt;&lt;b&gt;测试&lt;/b&gt;&lt;/h2&gt;
+        &lt;ol start="1" type = "1"&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;h2&gt;&lt;b&gt;测试&lt;/b&gt;&lt;/h2&gt;
+        &lt;ul type="square"&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+            &lt;li&gt;测试&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;h2&gt;&lt;b&gt;测试&lt;/b&gt;&lt;/h2&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;
+                &lt;img src="test.jpg" alt="test" title="title"&gt;
+            &lt;/dt&gt;
+            &lt;dd&gt;测试 &lt;/dd&gt;
+            &lt;dd&gt;测试&lt;/dd&gt;
+        &lt;/dl&gt;
+        
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="表格基础"><a href="#表格基础" class="headerlink" title="表格基础"></a>表格基础</h2><p>双标签</p>
+<p>table </p>
+<p>table row   tr</p>
+<p>table data cell   td</p>
+<p>不要在table和tr中包裹其他标签</p>
+<p>一个tr表示一行</p>
+<p>一个td表示一个单元格</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt; &lt;/td&gt;
+	&lt;/tr&gt;
+	
+&lt;/table&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>基础表格实现</p>
+<pre class="line-numbers language-none"><code class="language-none">table&gt;tr*4&gt;td*5
+//这样实现的表无框无表头突出<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="表格属性"><a href="#表格属性" class="headerlink" title="表格属性"></a>表格属性</h2><p>如何加强表头显示呢?加粗?是否有对table的专门方法?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;th&gt;&lt;/th&gt;
+&lt;table header cell&gt;表头单元格<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="alt-鼠标左键进行批量选择进行修改"><a href="#alt-鼠标左键进行批量选择进行修改" class="headerlink" title="alt+鼠标左键进行批量选择进行修改"></a>alt+鼠标左键进行批量选择进行修改</h3><p>如何定义表格框架线条粗细?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;table border="1"&gt;//数字定义线条粗细<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如何定义表格的宽度与高度</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;table border="" width="" height=""&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>定义出来的框架是有空格的,如何将空格取消掉呢</p>
+<h3 id="cellspacing-单元格间距离"><a href="#cellspacing-单元格间距离" class="headerlink" title="cellspacing 单元格间距离"></a>cellspacing 单元格间距离</h3><h3 id="cellpadding-单元格边框和文本之间的距离"><a href="#cellpadding-单元格边框和文本之间的距离" class="headerlink" title="cellpadding 单元格边框和文本之间的距离"></a>cellpadding 单元格边框和文本之间的距离</h3><p>如何实现一个表格的对齐呢</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;table align="属性"&gt;&lt;/tabke&gt; //这里的属性可以为left right center<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如何更改表格背景颜色呢?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;table bgcolor="" bordercolor=""&gt;//背景颜色bgcolor   边框颜色 bordercolor<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>更加美观得看css了</p>
+<h2 id="表格行属性"><a href="#表格行属性" class="headerlink" title="表格行属性"></a>表格行属性</h2><p>若未规定某一行的具体高度 那么每行会均分表高</p>
+<p>若规定某一行表高则其他行将剩下来的平均分配</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;tr height="数字"&gt;&lt;/tr&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>官方公布的tr属性中是没有宽度属性的</p>
+<p>表格行高在没有设定值的情况下</p>
+<p>有数据的一行会挤压无数据行的空间</p>
+<p>设置行颜色</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;tr bgcolor=""&gt; <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如何实现一行内的单元格的水平对齐方式和垂直对齐方式呢</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;tr align="" valign=""&gt;
+//align的几种方式  left center right
+//valign的几种方式  top middle bottom<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="单元格属性"><a href="#单元格属性" class="headerlink" title="单元格属性"></a>单元格属性</h2><p>如何实现只修饰一个单元格?</p>
+<p>调整单元格的宽度</p>
+<p>调整任何单元格的属性都会影响一列的宽度</p>
+<p>​		高度则会影响所在行</p>
+<p>颜色则是单独颜色</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;td width="" height=""  bgcolor=""&gt;&lt;/td&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如何实现单个单元格的上下左右对齐方式呢?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;td align="" valign""&gt; &lt;/td&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="单元格合并"><a href="#单元格合并" class="headerlink" title="单元格合并"></a>单元格合并</h2><p>列合并(垂直)</p>
+<p> 行合并(水平)</p>
+<p>单元格跨行或跨列</p>
+<p>只要保留第一个然后其他的删除,浏览器自动拉伸</p>
+<p>那么具体如何实现呢?</p>
+<p>用到span</p>
+<p>rowspan跨行 再把其他的删掉(一定要记得删掉)  从某种意义上就实现了行合并</p>
+<p>列的colspan同理</p>
+<h2 id="表头属性"><a href="#表头属性" class="headerlink" title="表头属性"></a>表头属性</h2><p>将第一行的td 用alt+b逐个选中改为th 加强语义属性加粗同时居中的</p>
+<p>可以加空格撑开表格</p>
+<p>不然没数据的会被挤扁很丑</p>
+<h2 id="表格标题和结构分组"><a href="#表格标题和结构分组" class="headerlink" title="表格标题和结构分组"></a>表格标题和结构分组</h2><p>如何实现一个表格标题</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;caption&gt; &lt;/caption&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>当表格变大 需要对行进行分组设计该如何做呢?</p>
+<p>加入标签的设计</p>
+<p>thead表格头</p>
+<p>tbody表格体</p>
+<p>tfoot表格尾</p>
+<p>提醒:</p>
+<p>如果未加入标签设计,浏览器渲染会把所有的tr放到tbody里面渲染</p>
+<p>一个表格只允许一个thead和一个tfoot  但是允许多个tbody</p>
+<p>列分为一组</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;colgroup span="1"&gt; &lt;/colgroup&gt;//这里实现的是选择第一列<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>方便设置一列的颜色</p>
+<h2 id="颜色名称和长度单位"><a href="#颜色名称和长度单位" class="headerlink" title="颜色名称和长度单位"></a>颜色名称和长度单位</h2><p>颜色名称   必须使用140个标准名称之一 不能用中文</p>
+<p>十六进制值 #RR GG BB 颜色强度</p>
+<p>RGB值 RGB(R, G, B); R(0, 0 ,255)</p>
+<h3 id="绝对单位长度"><a href="#绝对单位长度" class="headerlink" title="绝对单位长度"></a>绝对单位长度</h3><p>n  px </p>
+<h3 id="相对单位长度"><a href="#相对单位长度" class="headerlink" title="相对单位长度"></a>相对单位长度</h3><p>适用于不同设备时使用</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;table width="100%"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="块级元素-内联元素"><a href="#块级元素-内联元素" class="headerlink" title="块级元素 内联元素"></a>块级元素 内联元素</h2><p>HTML元素有默认显示值</p>
+<p>block  -level 块级元素    </p>
+<p>block元素自动占据一行, 上下有一定距离 占据可用的全部宽度</p>
+<p>inline 内联元素</p>
+<h3 id="当有好多个标签要实现相同的效果时应该怎么办-一个一个重选吗-显然不行-引入div标签"><a href="#当有好多个标签要实现相同的效果时应该怎么办-一个一个重选吗-显然不行-引入div标签" class="headerlink" title="当有好多个标签要实现相同的效果时应该怎么办?一个一个重选吗,显然不行,引入div标签"></a>当有好多个标签要实现相同的效果时应该怎么办?一个一个重选吗,显然不行,引入div标签</h3><p>div  分块   引申为盒子,容器</p>
+<h3 id="块级元素一览"><a href="#块级元素一览" class="headerlink" title="块级元素一览"></a>块级元素一览</h3><p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231227110103264.png" alt="image-20231227110103264"></p>
+<p>内联元素不会独占一行,只占用必要的宽度</p>
+<p>典型内联元素</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231227110239006.png" alt="image-20231227110239006"></p>
+<p>内联元素里面不能嵌套块级元素</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231227122827362.png" alt="image-20231227122827362"></p>
+<h2 id="初识表单"><a href="#初识表单" class="headerlink" title="初识表单"></a>初识表单</h2><p>如何采集用户信息?</p>
+<p>表单</p>
+<p>采集用户信息通过表单控件来完成</p>
+<h3 id="分组控件"><a href="#分组控件" class="headerlink" title="分组控件"></a>分组控件</h3><h3 id="单行文本框控件"><a href="#单行文本框控件" class="headerlink" title="单行文本框控件"></a>单行文本框控件</h3><h3 id="多行文本框控件"><a href="#多行文本框控件" class="headerlink" title="多行文本框控件"></a>多行文本框控件</h3><h3 id="单选框控件"><a href="#单选框控件" class="headerlink" title="单选框控件"></a>单选框控件</h3><h3 id="多选框控件"><a href="#多选框控件" class="headerlink" title="多选框控件"></a>多选框控件</h3><h3 id="下拉框控件"><a href="#下拉框控件" class="headerlink" title="下拉框控件"></a>下拉框控件</h3><h3 id="文件选择控件"><a href="#文件选择控件" class="headerlink" title="文件选择控件"></a>文件选择控件</h3><h3 id="普通按钮控件"><a href="#普通按钮控件" class="headerlink" title="普通按钮控件"></a>普通按钮控件</h3><h3 id="自定义按钮控件"><a href="#自定义按钮控件" class="headerlink" title="自定义按钮控件"></a>自定义按钮控件</h3><p>具体实现?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;form&gt; &lt;/form&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="文本框和密码框"><a href="#文本框和密码框" class="headerlink" title="文本框和密码框"></a>文本框和密码框</h2><p>form<br>      input</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;input type="text"&gt; 
+&lt;input type="password"&gt;  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231227124801638.png" alt="image-20231227124801638"></p>
+<p>input控件的type属性,默认是单行普通文本框</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;form&gt;
+//换行温习
+
+请输入文本:&lt;input&gt;
+&lt;br&gt;
+密码:&lt;input type="password"&gt;
+&lt;/form&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>观点看法评论框的这些实现?</p>
+<p>自动换行 多了会有滚轮</p>
+<p>实现</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;form&gt;
+	&lt;textarea&gt; &lt;/textarea&gt;
+&lt;/form&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>如何设置宽度高度?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;textarea cols="" rows=""&gt; &lt;/textarea&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>滚动条会占位置的</p>
+<p>一般用css来实现样式</p>
+<pre class="line-numbers language-none"><code class="language-none">//单选
+radio
+//多选
+checkbox<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>单选框控件必须成组使用才有意义, 每组至少需要两个单选框</p>
+<p>组是通过name属性来建立的,凡是name相同的就是一组</p>
+<p>同组的单选框只有一个会处于选中状态 其他未选中</p>
+<p>如何设置选中的默认值?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;intput type="radio" checked="checked"&gt; // 也可以直接写成checked<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="下拉框选中"><a href="#下拉框选中" class="headerlink" title="下拉框选中"></a>下拉框选中</h2><pre class="line-numbers language-none"><code class="language-none">&lt;select&gt;
+	&lt;option&gt; &lt;/option&gt;
+&lt;/select&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>选中默认情况selected</p>
+<p>下拉框如何选中多个?</p>
+<p><code>&lt;select multiple size="数字"&gt;</code> 这里size是默认值</p>
+<h2 id="选择文件"><a href="#选择文件" class="headerlink" title="选择文件"></a>选择文件</h2><pre class="line-numbers language-none"><code class="language-none">&lt;input type="file"&gt;
+//选择文件后文件名字显示在选择文件按钮的后面<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>不同的浏览器显示是不一样的,但是都可以实现文件的选择功能</p>
+<h2 id="表单标签"><a href="#表单标签" class="headerlink" title="表单<label>标签"></a>表单<code>&lt;label&gt;</code>标签</h2><p>如何实现一个范围内都有一个功能选择的焦点?</p>
+<p>例如点击文件名也能算是点击文本框</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;label for="username"&gt;测试&lt;/label&gt;
+&lt;input type="text" id="username"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>id属性值具有唯一性,一个页面不能出现两相同的</p>
+<p>只读输入框</p>
+<p>只读输入框虽然内容不能输入和修改,但是可以复制</p>
+<p>多行文本框也可以设置成只读的</p>
+<p>那么如何实现呢?</p>
+<pre class="line-numbers language-none"><code class="language-none">//给控件添加一个只读属性
+&lt;input type="text" readonly&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>如何给文本框加上显示默认值?</p>
+<p>多个表单控件开发的快速实现</p>
+<pre class="line-numbers language-none"><code class="language-none">input[type="radio" name="gender"]*3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如何让一个选项出现但是不给你选呢?</p>
+<p>添加一个属性readonly</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;input type="radio" name="gender"&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>默认选中是checked</p>
+<h2 id="表单分组"><a href="#表单分组" class="headerlink" title="表单分组"></a>表单分组</h2><p>如何实现带有边框和标题的表单?</p>
+<p>fieldset字段集 引申为表单</p>
+<p>legend 说明的意思 能够给fieldset定义标题</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;filedset&gt;
+	&lt;legend&gt;标题&lt;/legend&gt;
+&lt;/fieldset&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="表单按钮"><a href="#表单按钮" class="headerlink" title="表单按钮"></a>表单按钮</h2><p>提交</p>
+<p>重置</p>
+<p>普通</p>
+<p>图像按钮</p>
+<p>双标签button</p>
+<p>具有收集信息发送到后台的功能</p>
+<p>页面刷新<br>闪烁<br>地址后面多了问号</p>
+<p>一个表单数据如何传给服务器?</p>
+<p>使用action</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;form action="http://www.baidu.com"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如果不写action数据会提交给自己的页面</p>
+<p>然后重新进入自己的页面也就出现了页面闪烁一下,然后里面的内容消失</p>
+<p>我们如何让这个内容不消失呢?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;form target="_blank"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如何重置表单?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;input type="reset"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如何定义一个普通按钮呢?</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;input type="button" value="默认文字"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>提交按钮</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;input type="submit"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h2 id="表单按钮-下"><a href="#表单按钮-下" class="headerlink" title="表单按钮(下)"></a>表单按钮(下)</h2><p>图像按钮</p>
+<p>按了之后会提交</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;input type="imag" src="logo.png"&gt; //要有种类来源
+单独设置宽高 width  height<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>有没有其他的可以实现表单提交的功能</p>
+<p>双标签button按钮</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;button&gt; &lt;/button&gt;
+//如果加上type="button"这个按钮就又变成了普通按钮<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>如何实现段首空两格功能?</p>
+<pre class="line-numbers language-none"><code class="language-none">&amp;emsp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如何实现多行文本的默认文字?</p>
+<p>要通过textarea中添加文字实现,不能通过添加value实现</p>
+<pre class="line-numbers language-none"><code class="language-none">[input type=radio name=ismilitary]*2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="表单数据采集和提交"><a href="#表单数据采集和提交" class="headerlink" title="表单数据采集和提交"></a>表单数据采集和提交</h2><p>前后端协作流程</p>
+<p>要让浏览器自动收集表单控件数据</p>
+<p>要在提交的表单控件属性里面添加上name属性</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231229183527911.png" alt="image-20231229183527911"></p>
+<p>要在form标签的action属性里面写上网址 </p>
+<p>提交信息直接现实中在网址中不安全</p>
+<p>我们该怎么办呢?</p>
+<p>涉及到提交方法method</p>
+<p>默认方法:get 浏览器会把收集好的表单数据加到服务器地址的后面提交给服务器</p>
+<p>post不但能收集数据,而且不会在地址栏里暴露隐私数据</p>
+<pre class="line-numbers language-none"><code class="language-none">表单提交
+&lt;form action="" method="POST"&gt;
+        名字:&lt;input type="text" name="getname"&gt;&lt;br&gt;
+        密码: &lt;input type="password" name="password"&gt;&lt;br&gt;
+        &lt;input type="submit" value="登录"&gt;
+    &lt;/form&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>浏览器收集表单提交的查看</p>
+<pre class="line-numbers language-none"><code class="language-none">f12-&gt;network-&gt;点击事件<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="其他使用标签"><a href="#其他使用标签" class="headerlink" title="其他使用标签"></a>其他使用标签</h2><pre class="line-numbers language-none"><code class="language-none">&lt;horizontal&gt;
+&lt;hr&gt; 在网页上画出一条水平分隔线<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>hr标签的五个属性</p>
+<p>width/size 宽度和高度</p>
+<p>noshade 用来去掉水平阴影</p>
+<p>color 用来定义水平线的颜色</p>
+<p>align  调整水平线水平对齐方式</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;hr with="300" size="10px" align="left" noshade color="red"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="pre预格式化文本"><a href="#pre预格式化文本" class="headerlink" title="pre预格式化文本"></a>pre预格式化文本</h3><pre class="line-numbers language-none"><code class="language-none">&lt;pre&gt;&lt;/pre&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>内容物将完整按照html源码中来实现</p>
+<h3 id="map定义一个图像映射"><a href="#map定义一个图像映射" class="headerlink" title="map定义一个图像映射"></a>map定义一个图像映射</h3><p>点击图片不同区域实现链接页面的跳转</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;map name=""&gt;
+	&lt;area&gt;//定义图片上的热点区域
+&lt;/map&gt;
+name属性与img标签的usemap属性相关联<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>area设置位置的大小及形状,单标签</p>
+<p>area三个属性:</p>
+<p>href定义热点区域链接的目标地址</p>
+<p>shape用来定义区域的形状</p>
+<p>default 所有区域<br>rect 矩形<br>circle 圆形<br>ploy 多边形</p>
+<p>coords用来定义可点击区域的坐标</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;map&gt;
+&lt;area href="" shape="circle" coords="x,y,z"&gt;
+&lt;/map&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231229192148145.png" alt="image-20231229192148145"></p>
+<p>多边形poly</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;area shape="poly" coords="x1,y1,x2,y2,,,,xn,yn"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231229192332491.png" alt="image-20231229192332491"></p>
+<p>不需要重新定义第一个坐标来闭合整个区域</p>
+<p>定义矩形</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;area shape="rect" coords="x1,y1,x2,y2"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如何实现在图片中跳转呢</p>
+<pre class="line-numbers language-none"><code class="language-none">//源图片
+&lt;img src="a.jpg" alt="" usemap="#planemap"&gt;
+//链接跳转的id也是要加#
+//但是label的for不需要#
+&lt;map name="planetmap"&gt;
+	&lt;area shape="rect" coords="0,0,110,260" href="test.gif" alt=""&gt;
+	&lt;area circle="circle" coords="129,161,10" href="test.gif" alt=""&gt;
+&lt;/map&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="iframe"><a href="#iframe" class="headerlink" title="iframe"></a>iframe</h2><p>如何实现在一个页面中塞入三个官网呢?</p>
+<p>使用iframe标签</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;iframe src="页面路径" width="数字" height="数字" frameborder="0" scrolling="属性"&gt;&lt;/iframe&gt;
+//scrolling属性auto yes no<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">(a[href target=iframe_a]&gt;b)*3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>a链接可以是互联网的网站地址也可以是自己制作的本地页面地址,这些页面都可以在iframe中显示</p>
+<p>就是可以指向iframed的name</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;div&gt;
+	(a[href target=iframe_a]&gt;b)*3
+&lt;/div&gt;
+
+&lt;iframe src="http://www.baidu.com" frameborder="0" width="800" height="600" name="iframe_a"&gt; &lt;/iframe&gt;
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="SVG-XML语法的图像格式"><a href="#SVG-XML语法的图像格式" class="headerlink" title="SVG:XML语法的图像格式"></a>SVG:XML语法的图像格式</h2><p>不管缩放多少都不会模糊</p>
+<p>png图片是基于像素处理的</p>
+<p>svg标签是svg图形的一个容器</p>
+<p>可以绘制各种图像</p>
+<p>width  height</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;svg width="" height=""&gt; &lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="SVG绘制矩形圆形和椭圆形"><a href="#SVG绘制矩形圆形和椭圆形" class="headerlink" title="SVG绘制矩形圆形和椭圆形"></a>SVG绘制矩形圆形和椭圆形</h2><p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231229213720461.png" alt="image-20231229213720461"></p>
+<p>rect(angle)矩形</p>
+<p>任何html单标签都可以在第二个尖角号前写一个斜杠</p>
+<p>表示标签闭合了</p>
+<p><code>&lt;rect&gt;</code></p>
+<p>width:定义矩形的宽度     height:定义矩形的高度   fill:定义矩形填充颜色      stroke-width:定义矩形的边框宽度    stroke:定义矩形边框的颜色</p>
+<p>透明度的值越小,透明度越高</p>
+<p>x是距离左边的你数字,y是距离右边的数字</p>
+<p>fill-opacity填充颜色的透明度</p>
+<p>stroke-opacity</p>
+<p>透明的数值范围是0到1</p>
+<p>左右和宽高都是直接的数字</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;svg width="400" height="110"&gt;
+	&lt;rect width="300" height="100" fill="blue" stroke-width="3" stroke="black"/&gt;
+&lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>我们也可以去掉fill-opacity和stroke-opaciry</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;svg width="400" height="180"&gt;
+	&lt;rect x="50" y="20" width="150" height="150" fill="blue" stroke="tomao"
+	stroke-width="5" opacity="0.5" /&gt;
+&lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="如何实现矩形的圆角-椭圆角"><a href="#如何实现矩形的圆角-椭圆角" class="headerlink" title="如何实现矩形的圆角.椭圆角?"></a>如何实现矩形的圆角.椭圆角?</h3><pre class="line-numbers language-none"><code class="language-none">&lt;svg width="400" height="180"&gt;
+	&lt;rect x="50" t="20" width="150" height="150" fill="red" stroke="black"
+	stroke-width="5" opacity="0.5" rx="20" ry="30" /&gt;
+&lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="如何实现圆形的图形绘制"><a href="#如何实现圆形的图形绘制" class="headerlink" title="如何实现圆形的图形绘制?"></a>如何实现圆形的图形绘制?</h3><pre class="line-numbers language-none"><code class="language-none">&lt;circle cx="" cy="" r="" stroke="" 边框颜色
+stroke-width=""边框宽度 fill=""背景色填充/&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>cx cy定义原中心的x,y坐标</p>
+<p>r定义圆半径</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230003349280.png" alt="image-20231230003349280"></p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230003712256.png" alt="image-20231230003712256"></p>
+<p>椭圆堆叠</p>
+<p>按y轴 的那个顺序堆叠</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230003909623.png" alt="image-20231230003909623"></p>
+<p>如何绘制一个视觉上空心椭圆?</p>
+<p>ellipse</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230004025230.png" alt="image-20231230004025230"></p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230004046850.png" alt="image-20231230004046850"></p>
+<h2 id="SVG绘制线条-多边形-多线条"><a href="#SVG绘制线条-多边形-多线条" class="headerlink" title="SVG绘制线条 多边形 多线条"></a>SVG绘制线条 多边形 多线条</h2><p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230004228330.png" alt="image-20231230004228330"></p>
+<p>line具体实现</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;svg width="500" height="210"&gt;
+	&lt;line x1="0" y1="0" x2="200" y2="200" stroke="red" stroke-width="2"&gt;
+&lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>绘制多边形</p>
+<pre class="line-numbers language-none"><code class="language-none">polygan
+&lt;polygon points="x1,y1 x2,y2"/&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230005611991.png" alt="image-20231230005611991"></p>
+<p>绘制五角星</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;svg width="500" height="210"&gt;
+	&lt;polygon points="100,10 20,198 198,78 160,198" fill="lime" stroke="purple" stroke-width="5"/&gt;
+&lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230010327449.png" alt="image-20231230010327449"></p>
+<p>绘制多线条</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;svg width="500" height="400"&gt;
+	&lt;polyline points="点坐标集" stroke="black"
+	stroke-width="3" fill="none" 不填充任何颜色/&gt;
+&lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="SVG绘制文本"><a href="#SVG绘制文本" class="headerlink" title="SVG绘制文本"></a>SVG绘制文本</h2><pre class="line-numbers language-none"><code class="language-none">&lt;svg height="100" width="300"&gt;
+&lt;text x="" y = "15" font-size="20" text-anchor=""&gt;TEST&lt;/text&gt;
+//text-anchor的属性有start middle end三种对齐方式
+&lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>举个例子</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;svg width="300" height="30"&gt;
+	&lt;text x="0" y="15" fill="red"&gt;I love SVG!&lt;/text&gt;
+&lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>svg标签里为什么不用p标签来绘制文本?</p>
+<p>因为svg标签可以实现文本旋转的效果</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;text transform="rotate(30, 20 40)"&gt; &lt;/text&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>svg标签中添加tspan标签实现单独效果</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;svg width="200" height="60"&gt;
+	&lt;text  x="10" t="20" fill="red"&gt;
+	Serveral lines
+	&lt;tspan x="10" y="45"&gt;First line&lt;/tspan&gt;
+	&lt;tspan x="10" y="70"&gt;First line&lt;/tspan&gt;
+	&lt;/text&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>text绘制的文本可以添加超链接吗?</p>
+<pre class="line-numbers language-none"><code class="language-none">用a标签包裹起来就行
+&lt;svg xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+&lt;a xlink:href="test2.html" target=""&gt;
+	&lt;text&gt; &lt;/text&gt;
+&lt;/a&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="svg绘制路径"><a href="#svg绘制路径" class="headerlink" title="svg绘制路径"></a>svg绘制路径</h2><pre class="line-numbers language-none"><code class="language-none">&lt;path d=""/&gt;
+d是用来绘制路径的命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>d是draw绘制的缩写</p>
+<p>M moveto<br>L lineto</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;path d="M150 0 l75 200"/&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>M大写字母表示绝对定位</p>
+<p>l小写字母表示相对定位</p>
+<p>绝对定位是相对于屏幕坐标原点的位置</p>
+<p>相对定位是相对于上一个绘制点的位置</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;body&gt;
+	&lt;svg width="400" height="210"&gt;
+		&lt;path d="M150 0 L75 200 L225 200"/&gt;
+	&lt;/svg&gt;
+&lt;/body&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>用polygan绘制不也行吗,为什么用path?</p>
+<p>二次贝塞尔曲线绘制</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;path d="M 100 350 q 150 -300 300 0"/&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230111935824.png" alt="image-20231230111935824"></p>
+<p>在svg标签中可以用g标签将子标签包裹起来来批量设置子标签的格式</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;svg width="450" height="400"&gt;
+	&lt;path d="M 100 350 l150 -300" stroke="red" stroke-width="3" fill="none"&gt;
+    &lt;path d="M 250 50 l150 300" stroke="red" stroke-width="3" fill="none"&gt;
+    &lt;path d="M 175 200 l150 0" stroke="green" stroke-width="3" fill="none"&gt;
+    &lt;path d="M 100 350 l150 -300 300 0" stroke="red" stroke-width="3" fill="none"&gt;
+
+	&lt;g fill="black"&gt;
+		&lt;circle cx="100" cy="350" r="3" /&gt;
+		&lt;circle cx="250" cy="50" r="3" /&gt;
+		&lt;circle cx="400" cy="350" r="3" /&gt;
+	&lt;/g&gt;
+	&lt;g font-size="30" fill="black" text-anchor="middle"&gt;
+		&lt;text x="100" y="350" dx="-30"&gt;A&lt;/text&gt;
+		&lt;text x="250" y="50" dx="-10"&gt;B&lt;/text&gt;
+		&lt;text x="400" y="350" dx="30"&gt;C&lt;/text&gt;
+	&lt;/g&gt;
+&lt;/svg&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="SVG描边属性"><a href="#SVG描边属性" class="headerlink" title="SVG描边属性"></a>SVG描边属性</h2><pre class="line-numbers language-none"><code class="language-none">&lt;path stroke/&gt;//笔画属性
+&lt;path stroke-width/&gt;//笔画宽度属性
+&lt;path stroke-linecap/&gt;//笔画笔帽属性
+&lt;path stroke-dasharray/&gt;//虚线笔画属性
+//大小是直接用数字的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可用于线条 文本 图片 图形绘制</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230115554581.png" alt="image-20231230115554581"></p>
+<p>stroke-linecap的几种属性</p>
+<p>butt没线帽  round圆形线帽   square方线帽</p>
+<p><img src="C:\Users\10482\AppData\Roaming\Typora\typora-user-images\image-20231230120406928.png" alt="image-20231230120406928"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Satan Pig</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://winhhh666.github.io/2023/12/23/da-qian-duan-xue-xi/">https://winhhh666.github.io/2023/12/23/da-qian-duan-xue-xi/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Satan Pig</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: null,
+        id: '2023-12-23T23-41-31',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/12/31/vscode-cha-jian-sublime-kuai-jie-jian-de-shi-yong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Vscode插件sublime快捷键的使用">
+                        
+                        <span class="card-title">Vscode插件sublime快捷键的使用</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-12-31
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Satan Pig
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/12/23/dai-ma-sui-xiang-lu-shua-ti-ji-lu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="代码随想录刷题记录">
+                        
+                        <span class="card-title">代码随想录刷题记录</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Satan Pig
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('30')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: SatanPig的个人博客<br />'
+            + '文章作者: Satan Pig<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2023-2024</span>
+            
+            <a href="/about" target="_blank">Satan Pig</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+                <span id="translate">|&nbsp;繁/简：</span><a id="translateLink" href="javascript:translatePage();">繁</a>
+            
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">72.6k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2023";
+                        var startMonth = "8";
+                        var startDate = "13";
+                        var startHour = "14";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/winhhh666" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1048218204@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1048218204" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1048218204" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+        <script type="text/javascript" src="/js/tw_cn.js"></script>
+        <script type="text/javascript">
+          var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+          var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+          var cookieDomain = "https://winhhh666.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
+          var msgToTraditionalChinese = "繁"; //此处可以更改为你想要显示的文字
+          var msgToSimplifiedChinese = "简"; //同上，但两处均不建议更改
+          var translateButtonId = "translateLink"; //默认互换id
+          translateInitilization();
+        </script>
+    
+    
+    
+        
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/sakura.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

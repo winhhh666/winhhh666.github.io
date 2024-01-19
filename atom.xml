@@ -6,7 +6,7 @@
   <link href="https://winhhh666.github.io/atom.xml" rel="self"/>
   
   <link href="https://winhhh666.github.io/"/>
-  <updated>2023-10-20T17:05:10.534Z</updated>
+  <updated>2024-01-14T12:26:06.257Z</updated>
   <id>https://winhhh666.github.io/</id>
   
   <author>
@@ -17,40 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的第一个游戏推箱子</title>
-    <link href="https://winhhh666.github.io/2023/10/21/wo-de-di-yi-ge-you-xi-tui-xiang-zi/"/>
-    <id>https://winhhh666.github.io/2023/10/21/wo-de-di-yi-ge-you-xi-tui-xiang-zi/</id>
-    <published>2023-10-20T17:04:10.000Z</published>
-    <updated>2023-10-20T17:05:10.534Z</updated>
+    <title></title>
+    <link href="https://winhhh666.github.io/2024/01/14/vscode-zhong-shi-yong-cookie-deng-lu-leetcode/"/>
+    <id>https://winhhh666.github.io/2024/01/14/vscode-zhong-shi-yong-cookie-deng-lu-leetcode/</id>
+    <published>2024-01-14T12:24:54.683Z</published>
+    <updated>2024-01-14T12:26:06.257Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-c+&quot; data-language=&quot;c+&quot;&gt;&lt;code class=&quot;language-c+&quot;&gt;// ConsoleApplication1.cpp : 此文件包含 &quot;main&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>VS工具模块扩展</title>
-    <link href="https://winhhh666.github.io/2023/10/18/vs-gong-ju-mo-kuai-kuo-zhan/"/>
-    <id>https://winhhh666.github.io/2023/10/18/vs-gong-ju-mo-kuai-kuo-zhan/</id>
-    <published>2023-10-18T06:11:19.000Z</published>
-    <updated>2023-10-18T07:05:26.884Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt; VS visual studio 2019 获取新的工具或功能 安装新的模块&lt;/p&gt;
-&lt;h4 id=&quot;点击：工具-获取工具与功能-点击打开模块安装器：installer&quot;&gt;&lt;a href=&quot;#点击：工具-获取工具与功能-点击打开模块安装器：installer&quot;</summary>
+    <summary type="html">&lt;p&gt;在vscode中使用cookie登录leetcode&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
         
       
     
@@ -60,117 +39,18 @@
   </entry>
   
   <entry>
-    <title>stl库函数</title>
-    <link href="https://winhhh666.github.io/2023/10/18/stl-ku-han-shu/"/>
-    <id>https://winhhh666.github.io/2023/10/18/stl-ku-han-shu/</id>
-    <published>2023-10-17T16:07:02.000Z</published>
-    <updated>2023-10-19T13:26:36.237Z</updated>
+    <title></title>
+    <link href="https://winhhh666.github.io/2024/01/07/untitled/"/>
+    <id>https://winhhh666.github.io/2024/01/07/untitled/</id>
+    <published>2024-01-07T02:57:01.186Z</published>
+    <updated>2024-01-14T16:33:05.976Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;include&quot;&gt;&lt;a href=&quot;#include&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="cpp" scheme="https://winhhh666.github.io/tags/cpp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>cpp类和对象</title>
-    <link href="https://winhhh666.github.io/2023/10/14/cpp-lei-he-dui-xiang/"/>
-    <id>https://winhhh666.github.io/2023/10/14/cpp-lei-he-dui-xiang/</id>
-    <published>2023-10-14T04:47:53.000Z</published>
-    <updated>2023-10-19T10:18:36.347Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;c-面向对象三大特性-封装继承-多态&quot;&gt;&lt;a href=&quot;#c-面向对象三大特性-封装继承-多态&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="cpp" scheme="https://winhhh666.github.io/categories/cpp/"/>
-    
-    
-    <category term="类和对象" scheme="https://winhhh666.github.io/tags/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>函数重载</title>
-    <link href="https://winhhh666.github.io/2023/10/14/han-shu-chong-zai/"/>
-    <id>https://winhhh666.github.io/2023/10/14/han-shu-chong-zai/</id>
-    <published>2023-10-13T16:57:44.000Z</published>
-    <updated>2023-10-14T04:46:30.539Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;函数重载&quot;&gt;&lt;a href=&quot;#函数重载&quot; class=&quot;headerlink&quot; title=&quot;函数重载&quot;&gt;&lt;/a&gt;函数重载&lt;/h1&gt;&lt;p&gt;函数名可以相同,提高复用性&lt;/p&gt;
-&lt;p&gt;函数重载满足条件:&lt;/p&gt;
-&lt;p&gt;同一个作用域下  函数名称相同</summary>
-        
-      
-    
-    
-    
-    <category term="cpp" scheme="https://winhhh666.github.io/categories/cpp/"/>
-    
-    
-    <category term="cpp函数重载" scheme="https://winhhh666.github.io/tags/cpp%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面向对象</title>
-    <link href="https://winhhh666.github.io/2023/10/11/mian-xiang-dui-xiang/"/>
-    <id>https://winhhh666.github.io/2023/10/11/mian-xiang-dui-xiang/</id>
-    <published>2023-10-11T06:09:11.000Z</published>
-    <updated>2023-10-11T09:42:15.114Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt; c++在执行时,内存分为4个区域&lt;/p&gt;
-&lt;h1 id=&quot;内存分区模型&quot;&gt;&lt;a href=&quot;#内存分区模型&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="cpp" scheme="https://winhhh666.github.io/tags/cpp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>opengl教程</title>
-    <link href="https://winhhh666.github.io/2023/10/07/opengl-jiao-cheng/"/>
-    <id>https://winhhh666.github.io/2023/10/07/opengl-jiao-cheng/</id>
-    <published>2023-10-07T06:22:57.000Z</published>
-    <updated>2023-10-07T14:27:06.554Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;头文件系列&quot;&gt;&lt;a href=&quot;#头文件系列&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;203链表相同元素的删除&quot;&gt;&lt;a href=&quot;#203链表相同元素的删除&quot; class=&quot;headerlink&quot; title=&quot;203链表相同元素的删除&quot;&gt;&lt;/a&gt;203链表相同元素的删除&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
         
       
     
@@ -180,39 +60,18 @@
   </entry>
   
   <entry>
-    <title>acwing刷题记录</title>
-    <link href="https://winhhh666.github.io/2023/10/05/acwing-shua-ti-ji-lu/"/>
-    <id>https://winhhh666.github.io/2023/10/05/acwing-shua-ti-ji-lu/</id>
-    <published>2023-10-05T06:38:52.000Z</published>
-    <updated>2023-10-13T16:56:34.348Z</updated>
+    <title></title>
+    <link href="https://winhhh666.github.io/2024/01/06/qian-duan-ti-xi-ke/"/>
+    <id>https://winhhh666.github.io/2024/01/06/qian-duan-ti-xi-ke/</id>
+    <published>2024-01-06T11:48:03.137Z</published>
+    <updated>2024-01-19T12:19:58.503Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;753平方矩阵&quot;&gt;&lt;a href=&quot;#753平方矩阵&quot; class=&quot;headerlink&quot; title=&quot;753平方矩阵&quot;&gt;&lt;/a&gt;753平方矩阵&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>10_1号想点事情</title>
-    <link href="https://winhhh666.github.io/2023/10/01/10-1-hao-xiang-dian-shi-qing/"/>
-    <id>https://winhhh666.github.io/2023/10/01/10-1-hao-xiang-dian-shi-qing/</id>
-    <published>2023-10-01T13:50:51.000Z</published>
-    <updated>2023-10-01T13:54:00.292Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;前端知识体系&quot;&gt;&lt;a href=&quot;#前端知识体系&quot; class=&quot;headerlink&quot; title=&quot;前端知识体系&quot;&gt;&lt;/a&gt;前端知识体系&lt;/h1&gt;&lt;h1 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -222,40 +81,18 @@
   </entry>
   
   <entry>
-    <title>游戏点子</title>
-    <link href="https://winhhh666.github.io/2023/09/26/you-xi-dian-zi/"/>
-    <id>https://winhhh666.github.io/2023/09/26/you-xi-dian-zi/</id>
-    <published>2023-09-26T15:11:57.000Z</published>
-    <updated>2023-09-26T15:21:24.666Z</updated>
+    <title>编译原理</title>
+    <link href="https://winhhh666.github.io/2024/01/03/bian-yi-yuan-li/"/>
+    <id>https://winhhh666.github.io/2024/01/03/bian-yi-yuan-li/</id>
+    <published>2024-01-03T12:44:44.000Z</published>
+    <updated>2024-01-04T08:38:51.011Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>数据结构习题集</title>
-    <link href="https://winhhh666.github.io/2023/09/23/shu-ju-jie-gou-xi-ti-ji/"/>
-    <id>https://winhhh666.github.io/2023/09/23/shu-ju-jie-gou-xi-ti-ji/</id>
-    <published>2023-09-23T14:47:00.000Z</published>
-    <updated>2023-10-02T07:05:23.827Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;​	司马习题集&lt;/p&gt;
-&lt;h3 id=&quot;链表合并-排序&quot;&gt;&lt;a href=&quot;#链表合并-排序&quot; class=&quot;headerlink&quot; title=&quot;链表合并+排序&quot;&gt;&lt;/a&gt;链表合并+排序&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-c&quot;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;C:&#92;Users&#92;10482&#92;AppData&#92;Roaming&#92;Typora&#92;typora-user-images&#92;image-20240103204921495.png&quot;</summary>
         
       
     
@@ -265,110 +102,291 @@
   </entry>
   
   <entry>
-    <title>数据结构c/cpp</title>
-    <link href="https://winhhh666.github.io/2023/09/22/shu-ju-jie-gou-c-cpp/"/>
-    <id>https://winhhh666.github.io/2023/09/22/shu-ju-jie-gou-c-cpp/</id>
-    <published>2023-09-22T01:11:10.000Z</published>
-    <updated>2023-09-23T14:47:13.038Z</updated>
+    <title>Vscode插件sublime快捷键的使用</title>
+    <link href="https://winhhh666.github.io/2023/12/31/vscode-cha-jian-sublime-kuai-jie-jian-de-shi-yong/"/>
+    <id>https://winhhh666.github.io/2023/12/31/vscode-cha-jian-sublime-kuai-jie-jian-de-shi-yong/</id>
+    <published>2023-12-30T17:21:16.000Z</published>
+    <updated>2024-01-06T16:34:27.860Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token</summary>
+    <summary type="html">&lt;h1 id=&quot;HTML5基础语法与标签&quot;&gt;&lt;a href=&quot;#HTML5基础语法与标签&quot; class=&quot;headerlink&quot; title=&quot;HTML5基础语法与标签&quot;&gt;&lt;/a&gt;HTML5基础语法与标签&lt;/h1&gt;&lt;p&gt;快捷键扩展&lt;/p&gt;
+&lt;pre</summary>
         
       
     
     
     
-    
-    <category term="数据结构" scheme="https://winhhh666.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
-    <title>cpp高级函数特性</title>
-    <link href="https://winhhh666.github.io/2023/09/20/cpp-gao-ji-han-shu-te-xing/"/>
-    <id>https://winhhh666.github.io/2023/09/20/cpp-gao-ji-han-shu-te-xing/</id>
-    <published>2023-09-20T06:04:13.000Z</published>
-    <updated>2023-10-16T02:08:04.449Z</updated>
+    <title>大前端学习</title>
+    <link href="https://winhhh666.github.io/2023/12/23/da-qian-duan-xue-xi/"/>
+    <id>https://winhhh666.github.io/2023/12/23/da-qian-duan-xue-xi/</id>
+    <published>2023-12-23T15:41:31.000Z</published>
+    <updated>2023-12-30T04:04:10.216Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;c-初始化&quot;&gt;&lt;a href=&quot;#c-初始化&quot; class=&quot;headerlink&quot; title=&quot;c++初始化&quot;&gt;&lt;/a&gt;c++初始化&lt;/h3&gt;&lt;p&gt;c++ 初始化</summary>
+    <summary type="html">&lt;h1 id=&quot;计算机常识&quot;&gt;&lt;a href=&quot;#计算机常识&quot; class=&quot;headerlink&quot; title=&quot;计算机常识&quot;&gt;&lt;/a&gt;计算机常识&lt;/h1&gt;&lt;h2 id=&quot;IP&quot;&gt;&lt;a href=&quot;#IP&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="语言" scheme="https://winhhh666.github.io/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码随想录刷题记录</title>
+    <link href="https://winhhh666.github.io/2023/12/23/dai-ma-sui-xiang-lu-shua-ti-ji-lu/"/>
+    <id>https://winhhh666.github.io/2023/12/23/dai-ma-sui-xiang-lu-shua-ti-ji-lu/</id>
+    <published>2023-12-23T01:54:30.000Z</published>
+    <updated>2023-12-27T15:11:12.263Z</updated>
     
     
-    <category term="cpp" scheme="https://winhhh666.github.io/tags/cpp/"/>
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;977-有序数组的平方&quot;&gt;&lt;a href=&quot;#977-有序数组的平方&quot; class=&quot;headerlink&quot; title=&quot;977 有序数组的平方&quot;&gt;&lt;/a&gt;977 有序数组的平方&lt;/h1&gt;&lt;h2 id=&quot;空间换时间双指针算法&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>学习路线</title>
+    <link href="https://winhhh666.github.io/2023/12/22/xue-xi-lu-xian/"/>
+    <id>https://winhhh666.github.io/2023/12/22/xue-xi-lu-xian/</id>
+    <published>2023-12-22T07:08:07.000Z</published>
+    <updated>2023-12-23T15:40:06.161Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;九曲阑干看基础&lt;/p&gt;
+&lt;p&gt;之后去读一年制网安&lt;/p&gt;
+&lt;p&gt;之后去警察局面试专技岗&lt;/p&gt;
+&lt;h2 id=&quot;指向常量的指针&quot;&gt;&lt;a href=&quot;#指向常量的指针&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>离散数学复习</title>
+    <link href="https://winhhh666.github.io/2023/12/17/chi-san-shu-xue-fu-xi/"/>
+    <id>https://winhhh666.github.io/2023/12/17/chi-san-shu-xue-fu-xi/</id>
+    <published>2023-12-17T03:22:50.000Z</published>
+    <updated>2023-12-17T03:28:45.523Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt; 判断公式类型&lt;/p&gt;
+&lt;p&gt;重言式</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>物理光学复习</title>
+    <link href="https://winhhh666.github.io/2023/12/16/wu-li-guang-xue-fu-xi/"/>
+    <id>https://winhhh666.github.io/2023/12/16/wu-li-guang-xue-fu-xi/</id>
+    <published>2023-12-16T10:53:55.000Z</published>
+    <updated>2023-12-16T16:27:32.982Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;C:&#92;Users&#92;10482&#92;AppData&#92;Roaming&#92;Typora&#92;typora-user-images&#92;image-20231216185435525.png&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://winhhh666.github.io/2023/11/26/yuan-hua/"/>
+    <id>https://winhhh666.github.io/2023/11/26/yuan-hua/</id>
+    <published>2023-11-26T08:54:52.103Z</published>
+    <updated>2023-11-28T08:27:00.290Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;AVG冒险游戏&lt;/p&gt;
+&lt;p&gt;![](C:&#92;Users&#92;10482&#92;Pictures&#92;Screenshots&#92;屏幕截图 2023-11-28</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端重学版</title>
+    <link href="https://winhhh666.github.io/2023/11/25/qian-duan-chong-xue-ban/"/>
+    <id>https://winhhh666.github.io/2023/11/25/qian-duan-chong-xue-ban/</id>
+    <published>2023-11-25T13:56:44.000Z</published>
+    <updated>2023-11-28T16:33:10.955Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​     &lt;/p&gt;
+&lt;p&gt;输入网址 ,向服务器发送请求,服务器返回文件&lt;/p&gt;
+&lt;p&gt;html内容&lt;/p&gt;
+&lt;p&gt;css布局和样式&lt;/p&gt;
+&lt;p&gt;js交互效果&lt;/p&gt;
+&lt;p&gt;图片压缩格式&lt;/p&gt;
+&lt;p&gt;图片文件格式&lt;/p&gt;
+&lt;p&gt;gif</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构</title>
+    <link href="https://winhhh666.github.io/2023/11/25/shu-ju-jie-gou-2/"/>
+    <id>https://winhhh666.github.io/2023/11/25/shu-ju-jie-gou-2/</id>
+    <published>2023-11-25T04:43:03.000Z</published>
+    <updated>2023-11-25T04:43:03.114Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu下载安装</title>
+    <link href="https://winhhh666.github.io/2023/11/25/ubuntu-xia-zai-an-zhuang/"/>
+    <id>https://winhhh666.github.io/2023/11/25/ubuntu-xia-zai-an-zhuang/</id>
+    <published>2023-11-25T03:04:45.000Z</published>
+    <updated>2023-11-25T03:44:13.033Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​	&lt;a href=&quot;https://www.releases.ubuntu.com/22.04/&quot;&gt;Ubuntu 22.04.3 LTS (Jammy Jellyfish)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;直接到上面的官网下载&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>思感</title>
+    <link href="https://winhhh666.github.io/2023/11/17/si-gan/"/>
+    <id>https://winhhh666.github.io/2023/11/17/si-gan/</id>
+    <published>2023-11-16T16:30:00.000Z</published>
+    <updated>2023-11-16T16:31:28.024Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​   </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络</title>
+    <link href="https://winhhh666.github.io/2023/11/16/ji-suan-ji-wang-luo/"/>
+    <id>https://winhhh666.github.io/2023/11/16/ji-suan-ji-wang-luo/</id>
+    <published>2023-11-16T15:48:13.000Z</published>
+    <updated>2023-11-17T16:50:05.488Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h1&gt;&lt;h2 id=&quot;1-1信息时代的计算机网络&quot;&gt;&lt;a href=&quot;#1-1信息时代的计算机网络&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
     
   </entry>
   
   <entry>
     <title>数据结构</title>
-    <link href="https://winhhh666.github.io/2023/09/15/shu-ju-jie-gou/"/>
-    <id>https://winhhh666.github.io/2023/09/15/shu-ju-jie-gou/</id>
-    <published>2023-09-14T23:59:06.000Z</published>
-    <updated>2023-09-20T06:05:54.870Z</updated>
+    <link href="https://winhhh666.github.io/2023/11/16/shu-ju-jie-gou-1/"/>
+    <id>https://winhhh666.github.io/2023/11/16/shu-ju-jie-gou-1/</id>
+    <published>2023-11-16T05:06:21.000Z</published>
+    <updated>2023-12-19T08:21:35.916Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;顺序表&quot;&gt;&lt;a href=&quot;#顺序表&quot; class=&quot;headerlink&quot; title=&quot;顺序表&quot;&gt;&lt;/a&gt;顺序表&lt;/h1&gt;&lt;p&gt;1.存储数据&lt;/p&gt;
-&lt;p&gt;2.存储数据表的长度&lt;/p&gt;
-&lt;p&gt;3.记录存储容量&lt;/p&gt;
-&lt;h2</summary>
+    <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;3-4特殊矩阵的压缩存储&quot;&gt;&lt;a href=&quot;#3-4特殊矩阵的压缩存储&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    
-    <category term="数据结构(c语言)" scheme="https://winhhh666.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-c%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
   <entry>
-    <title>c语言头文件</title>
-    <link href="https://winhhh666.github.io/2023/09/12/c-yu-yan-tou-wen-jian/"/>
-    <id>https://winhhh666.github.io/2023/09/12/c-yu-yan-tou-wen-jian/</id>
-    <published>2023-09-12T13:42:01.000Z</published>
-    <updated>2023-09-12T14:17:06.630Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;  什么情况下用&amp;lt;&amp;gt;, 什么情况下用””&lt;/p&gt;
-&lt;p&gt;(1)如果是系统头文件,string.h , stdlib.h等,&amp;lt;&amp;gt;&lt;/p&gt;
-&lt;p&gt;(2)如果是独立的第三方模块安装的 &amp;lt;&amp;gt; 比如</summary>
-        
-      
-    
-    
-    
-    
-    <category term="c语言" scheme="https://winhhh666.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c语言字符与字符串</title>
-    <link href="https://winhhh666.github.io/2023/09/12/c-yu-yan-zi-fu-yu-zi-fu-chuan/"/>
-    <id>https://winhhh666.github.io/2023/09/12/c-yu-yan-zi-fu-yu-zi-fu-chuan/</id>
-    <published>2023-09-12T07:33:03.000Z</published>
-    <updated>2023-09-13T11:56:59.941Z</updated>
+    <title>20231116</title>
+    <link href="https://winhhh666.github.io/2023/11/16/20231116/"/>
+    <id>https://winhhh666.github.io/2023/11/16/20231116/</id>
+    <published>2023-11-16T04:12:50.000Z</published>
+    <updated>2023-11-16T04:14:19.920Z</updated>
     
     
       
@@ -385,43 +403,18 @@
   </entry>
   
   <entry>
-    <title>头文件怎么制作</title>
-    <link href="https://winhhh666.github.io/2023/09/10/tou-wen-jian-zen-me-zhi-zuo/"/>
-    <id>https://winhhh666.github.io/2023/09/10/tou-wen-jian-zen-me-zhi-zuo/</id>
-    <published>2023-09-10T13:07:35.000Z</published>
-    <updated>2023-09-12T07:16:56.236Z</updated>
+    <title>c语言复习</title>
+    <link href="https://winhhh666.github.io/2023/11/15/c-yu-yan-fu-xi/"/>
+    <id>https://winhhh666.github.io/2023/11/15/c-yu-yan-fu-xi/</id>
+    <published>2023-11-15T15:58:05.000Z</published>
+    <updated>2023-11-15T16:08:25.232Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-c&quot; data-language=&quot;c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token</summary>
-        
-      
-    
-    
-    
-    
-    <category term="c语言" scheme="https://winhhh666.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>内存操作函数_宏_条件编译_代码模块</title>
-    <link href="https://winhhh666.github.io/2023/09/10/nei-cun-cao-zuo-han-shu-hong-tiao-jian-bian-yi-dai-ma-mo-kuai/"/>
-    <id>https://winhhh666.github.io/2023/09/10/nei-cun-cao-zuo-han-shu-hong-tiao-jian-bian-yi-dai-ma-mo-kuai/</id>
-    <published>2023-09-10T08:03:16.000Z</published>
-    <updated>2023-09-10T13:06:36.297Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;char* ptr = (int*)malloc(100);&lt;/p&gt;
-&lt;p&gt;memset(ptr , 0x0 , 100);&lt;/p&gt;
-&lt;p&gt;memmove一个一个来的</summary>
+    <summary type="html">&lt;p&gt; release版本:</summary>
         
       
     
@@ -431,51 +424,23 @@
   </entry>
   
   <entry>
-    <title>c++引用</title>
-    <link href="https://winhhh666.github.io/2023/09/08/c-yin-yong/"/>
-    <id>https://winhhh666.github.io/2023/09/08/c-yin-yong/</id>
-    <published>2023-09-08T13:43:31.000Z</published>
-    <updated>2023-09-08T14:18:30.884Z</updated>
+    <title>安卓的sdk和ndk下载失败</title>
+    <link href="https://winhhh666.github.io/2023/11/12/an-zhuo-de-sdk-he-ndk-xia-zai-shi-bai/"/>
+    <id>https://winhhh666.github.io/2023/11/12/an-zhuo-de-sdk-he-ndk-xia-zai-shi-bai/</id>
+    <published>2023-11-12T15:18:13.000Z</published>
+    <updated>2023-11-12T15:19:22.966Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt; 引用和指针的区别.&lt;/p&gt;
-&lt;p&gt;指针存储的是一块内存的地址,通过地址,可以访问这块内存&lt;br&gt;引用是一个变量的别名,在创建时必须初始化&lt;/p&gt;
-&lt;p&gt;引用在初始化之后不可变,指针可以修改指向的对象&lt;/p&gt;
-&lt;pre class=&quot;line-numbers</summary>
+    <summary type="html">&lt;p&gt;w 我的梯子有问题</summary>
         
       
     
     
     
-    
-    <category term="引用" scheme="https://winhhh666.github.io/tags/%E5%BC%95%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>static修饰符</title>
-    <link href="https://winhhh666.github.io/2023/09/05/static-xiu-shi-fu/"/>
-    <id>https://winhhh666.github.io/2023/09/05/static-xiu-shi-fu/</id>
-    <published>2023-09-05T07:18:10.000Z</published>
-    <updated>2023-09-05T07:20:36.153Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="c语言" scheme="https://winhhh666.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
